@@ -1,0 +1,84 @@
+body{
+  margin:0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  line-height: 2;
+  color:#40514E;
+}
+h1,h2{
+  font-family: 'Sacramento', cursive;
+  font-weight: bold;
+  color: #66BFBF;
+}
+h1{
+  font-size: 5rem;
+}
+h2{
+  font-size: 3rem;
+}
+hr{
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 20%;
+}
+.profile_header{
+    background-color:#EAF6F6;
+}
+#header_office_link{
+  color: #71c4c4;
+  text-decoration: underline;
+}
+#header_para{
+  width: 50rem;
+  margin: auto auto;
+}
+.profile_header{
+  margin: 0px auto 100px;
+}
+.selfie_formal{
+  position: relative;
+  border-radius:100%;
+  width:25rem;
+  display: inline-block;
+}
+.profile_headertext{
+  position: relative;
+  display: inline-block;
+  margin: 10rem;
+}
+.sectional_image{
+  position: relative;
+  width:12rem;
+  display: inline-block;
+  color: #40514E;
+}
+.sectional_text{
+  position: relative;
+  display: inline-block;
+  width:50rem;
+  margin: 0 auto;
+}
+.sectional_main_div{
+  position: relative;
+  margin: 5rem auto 5rem auto;
+}
+.pre-footer{
+  background-color:#EAF6F6;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin: 5rem auto 0rem auto;
+}
+.networking{
+  background-color: #66BFBF;
+}
+.footer_icons{
+  color:black;
+  position: relative;
+  margin: 0rem auto 0rem auto;
+  padding: 0.5rem;
+}
+.footer_p{
+  color:white;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
