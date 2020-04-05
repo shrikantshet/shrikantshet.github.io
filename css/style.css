@@ -1,9 +1,10 @@
 body{
-  margin:0;
+  margin:0 0;
   text-align: center;
   font-family: 'Merriweather', serif;
-  line-height: 2;
+  line-height: 1.5;
   color:#40514E;
+  font-size: 3rem;
 }
 h1,h2{
   font-family: 'Sacramento', cursive;
@@ -11,62 +12,59 @@ h1,h2{
   color: #66BFBF;
 }
 h1{
-  font-size: 5rem;
+  font-size: 10rem;
 }
 h2{
-  font-size: 3rem;
+  font-size: 8rem;
 }
 hr{
-  border: dotted #EAF6F6 6px;
+  border: dotted #EAF6F6 16px;
   border-bottom: none;
   width: 20%;
 }
-.profile_header{
-    background-color:#EAF6F6;
+.coloredwidth100{
+  background-color: #EAF6F6;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.container_header{
+    width:100%;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
 }
 #header_office_link{
   color: #71c4c4;
   text-decoration: underline;
 }
-#header_para{
-  width: 50rem;
-  margin: auto auto;
-}
-.profile_header{
-  margin: 0px auto 100px;
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
 .selfie_formal{
   position: relative;
   border-radius:100%;
-  width:25rem;
-  display: inline-block;
+  width:40rem;
+  /* display: inline; */
 }
-.profile_headertext{
-  position: relative;
-  display: inline-block;
-  margin: 10rem;
+.image_block_inline{
+  display: inline;
 }
-.sectional_image{
-  position: relative;
-  width:12rem;
-  display: inline-block;
+.sectional_image_color{
   color: #40514E;
-}
-.sectional_text{
-  position: relative;
-  display: inline-block;
-  width:50rem;
-  margin: 0 auto;
-}
-.sectional_main_div{
-  position: relative;
-  margin: 5rem auto 5rem auto;
 }
 .pre-footer{
   background-color:#EAF6F6;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  margin: 5rem auto 0rem auto;
+  margin: 5rem auto 0 auto;
 }
 .networking{
   background-color: #66BFBF;
@@ -74,11 +72,11 @@ hr{
 .footer_icons{
   color:black;
   position: relative;
-  margin: 0rem auto 0rem auto;
+  margin: 0 auto 0 auto;
   padding: 0.5rem;
 }
 .footer_p{
   color:white;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
