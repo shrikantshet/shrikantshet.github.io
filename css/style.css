@@ -22,6 +22,10 @@ hr{
   border-bottom: none;
   width: 20%;
 }
+p{
+  padding-left: 5px;
+  padding-right: 5px;
+}
 .coloredwidth100{
   background-color: #EAF6F6;
   height: 100%;
