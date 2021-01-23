@@ -2,196 +2,464 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
     <title>Shrikant Shet</title>
 
     <!-- Tailwind -->
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    <!-- DEVELOPMENT CSS -->
+    <!-- <link rel="stylesheet" href="./css/development.css" /> -->
+    <!-- PRODUCTION CSS -->
+    <link rel="stylesheet" href="./css/prod.css" />
 
     <!-- Fonts, Icons -->
     <link rel="icon" href="images\favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
       rel="stylesheet"
     />
     <script
-      src="https://kit.fontawesome.com/51e3a173ed.js"
+      src="https://kit.fontawesome.com/27fded497b.js"
       crossorigin="anonymous"
     ></script>
 
     <!-- TO DO: Add Google Analytics Tag -->
+    <style>
+      html {
+        font-family: 'Ubuntu', sans-serif;
+      }
+      body {
+        font-size: 1rem;
+      }
+      h1 {
+        font-size: 1.75rem;
+        font-weight: bold;
+      }
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+      html {
+     scroll-behavior: smooth;
+      }
+    </style>
+    <script>
+      const showMenu = () => {
+      document.getElementById("menubutton").style.display='none';
+      document.getElementById("menubar").style.display='block';
+      }
+      const hideMenu = () => {
+      document.getElementById("menubar").style.display='none';
+      document.getElementById("menubutton").style.display='block';
+      }
+    </script>
   </head>
-
-  <body>
-    <!-- Profile Header _____________________________________________________________________________-->
-    <section>
-      <div>
-        <div>
-          <div>
-            <img
-              src="images\selfie_formal.jpg"
-              alt="formal_photo"
-              class="rounded-full max-w-xsm"
-            />
-          </div>
-          <div>
-            <h1>I'm Shrikant Shet</h1>
-            <h2>
-              <strong>Freelance Software Developer & Product Manager</strong>
-            </h2>
-            <h2>My Skills:</h2>
-            <h3>
-              Front-end: HTML | CSS | JS | jQuery | BootStrap | TailwindCSS |
-              ReactJS
-            </h3>
-            <h3>
-              Management: Agile | Scrum | Project Management | Product
-              Management
-            </h3>
-            <h3>Tools: Git | Jira | Confluence | OpenProject</h3>
-            <p>
-              I'm a <strong>multipotentialite</strong> living life to the
-              fullest by exploring several domains - mechanical, computer
-              science, electronics, management, music!
-            </p>
-            <h2>
-              And I currently work with a team of freelance software developers!
-            </h2>
-            <h2>My Team's Skills:</h2>
-            <h3>
-              Front-end: HTML | CSS | JS | jQuery | BootStrap | TailwindCSS |
-              ReactJS | VueJS | AngularJS
-            </h3>
-            <h3>Back-end: NodeJS | Laravel</h3>
-            <h3>Databases: MongoDB | mySQL | postgreSQL</h3>
-            <h3>Mobile: ReactNative | Flutter</h3>
-            <h3>
-              Management: Agile | Scrum | Project Management | Product
-              Management
-            </h3>
-          </div>
+  <body class="bg-white mx-auto">
+          <button class="fixed right-0 bottom-0 bg-darkBlue p-2 my-1 mx-1 rounded-full" id="menubutton" onclick="showMenu()"><i class="fas fa-bars fa-2x inline-block text-white m-1"></i></button>
+          
+    <div id="menubar" style="display: none; outline: none;">
+      <div class="fixed right-0 bottom-0 bg-darkBlue p-2 my-1 mx-1 rounded-full  flex items-center">
+        <!-- Menu -->
+          <!-- My Skills -->
+          <a href="#my_skills" onclick=""><i class="fas fa-tools fa-2x inline-block text-white m-0.5"></i></a>
+          <!-- My Team's Skills -->
+          <a href="#team_skills"><i class="fas fa-users fa-2x inline-block text-white m-0.5"></i></a>
+          <!-- Professional Experience -->
+          <a href="#professional_experience"><i class="fas fa-briefcase fa-2x inline-block text-white m-0.5"></i></a>
+          <!-- Spiritual Journey -->
+          <a href="#spritual_journey"><i class="fas fa-peace fa-2x inline-block text-white m-0.5"></i></a>
+          <!-- Honors and Achievements -->
+          <a href="#honors_achievements"><i class="fas fa-trophy fa-2x inline-block text-white m-0.5"></i></a>
+          <!-- Education -->
+          <a href="#education"><i class="fas fa-user-graduate fa-2x inline-block text-white m-0.5"></i></a>
+          <!-- Get in Touch -->
+          <a href="#get-in-touch"><i class="fas fa-address-book fa-2x inline-block text-white m-0.5"></i></a>
+          <!-- CLOSE -->
+          <button onclick="hideMenu()"><i class="fas fa-times fa-2x inline-block text-white m-0.5"></i></button>
+        <!--  -->
+      </div>
+    </div>
+    
+      <!-- PROFILE HEADER _____________________________________________________________________________-->
+      <div
+        class="flex flex-wrap md:flex-nowrap items-center bg-green-50 mb-10 py-10 px-2"
+      >
+        <!-- PROFILE PIC -->
+        <div class="m-auto md:ml-auto md:mr-2">
+          <img
+            src="images\selfie_formal.jpg"
+            alt="formal_photo"
+            class="rounded-full md:max-w-xs"
+          />
+        </div>
+        <!-- NAME, DESIGNATION, SHORT BIO -->
+        <div class="ml-2 md:mr-auto md:max-w-lg">
+          <h1 class="uppercase text-darkBlue mt-10 md:mt-0">Shrikant Shet</h1>
+          <h2 class="text-greenBlue">
+            Freelance Software Developer &<br />Product Manager
+          </h2>
+          <p class="text-justify my-3 text-black">
+            I'm a <strong>multipotentialite</strong> living life to the fullest
+            by exploring several domains!
+          </p>
+          <p class="text-justify my-3 text-black">
+            And I currently work with a team of freelance software developers!
+          </p>
         </div>
       </div>
-    </section>
-
-    <!-- PROFESSIONAL EXPERIENCE SECTION _____________________________________________________________________________-->
-    <div>
-      <div>
-        <div>
-          <i class="fas fa-briefcase fa-10x"></i>
-        </div>
-        <div>
-          <h2>Professional Experience</h2>
-          <p>
-            <strong
-              >I've been an academician and a researcher, worked in mechanical
-              engineering operations and maintenance, led a software development
-              team at an IT services industry and now work as freelance software
-              developer and product manager.</strong
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!-- SKILLS SECTION _____________________________________________________________________________-->
+      <!-- SKILLS -->
+      <div id="my_skills" class="text-center px-2 md:px-48">
+        <div class="max-w-4xl mx-auto">
+          <!-- HEADER -->
+          <div class="my-10 flex items-center">
+            <i
+              class="ml-auto fas fa-tools fa-4x inline-block text-darkBlue"
+            ></i>
+            &nbsp;&nbsp;&nbsp;
+            <h2
+              class="mx-2 mr-auto uppercase font-black inline-block text-darkBlue"
             >
-          </p>
-          <ul>
-            <li>
-              Academic and Research Institutions:
-              <ul>
-                <li>
-                  <strong>IIT Madras</strong> - India's best institute for
-                  multiple years in a row! Here, I was involved in research in
-                  the area of vapor absorption system. I worked on design and
-                  documentation of the project.
+              My Skills
+            </h2>
+          </div>
+          <div class="flex flex-wrap">
+            <!-- MANAGEMENT SKILLS -->
+            <div class="my-3 mx-auto text-center px-5 max-w-sm">
+              <h3 class="uppercase text-greenBlue">Management</h3>
+              <ul class="text-center">
+                <li
+                  class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+                >
+                  Agile
                 </li>
-                <li>
-                  Dr. Babasaheb Ambedkar Technological University, Lonere -
-                  <strong
-                    >Maharashtra State's only Technological University</strong
-                  >, and now
-                  <strong>State's Affiliating Technical University</strong>
-                  (ATU). I taught multiple courses to undergraduate students and
-                  researched on refrigeration.
+                <li
+                  class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+                >
+                  Scrum
                 </li>
-                <li>
-                  CSMSS Chh. Shahu College of Engineering, Aurangabad - one of
-                  the best engineering education institutes in the Marathwada
-                  region of Maharashtra State. I conducted multiple theoretical
-                  courses and laboratory courses for the undergraduate students.
-                  Also, I guided multiple final year engineering projects.
+                <li
+                  class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+                >
+                  Project Management
                 </li>
-              </ul>
-            </li>
-            <li>
-              Managerial Experiences:
-              <ul>
-                <li>
-                  Virama Laminates Pvt. Ltd. -
-                  <strong
-                    >A PVC coating industry providing coated Aluminium and Steel
-                    sheets to the automobile body builders</strong
-                  >. I work as a freelance technical consultant here. I've
-                  trained the manpower for improving productivity.
-                </li>
-                <li>
-                  Intellection Software and Technologies Pvt. Ltd. -
-                  <strong
-                    >A 15-year old IT industry catering to clients like BARC
-                    India, TISS-SVE, EDV Feller AG, </strong
-                  >etc. At Intellection, I managed a software development team
-                  with average experience of 8 years. Being a small scale
-                  industry, I worked end-to-end. I was responsible for all
-                  activities right from requirement gathering for the project,
-                  till its delivery and then signing up service contracts for
-                  providing services.
-                </li>
-                <li>
-                  <strong
-                    >Center for Industrial Consultancy and Sponsored Research
-                    (ICSR) - IIT Madras</strong
-                  >. At ICSR, I worked as a project officer delivering
-                  consulting to Neyveli Lignite Corporation.
-                </li>
-                <li>
-                  JSW Steel Ltd. -
-                  <strong>India's largest steel producer</strong>. At JSW, I
-                  worked in Pellet Plant Operations - Control Room. This was a
-                  GET position, equivalent to Junior Manager.
-                </li>
-                <li>
-                  Sudarshan Chemical Industries Ltd.-
-                  <strong
-                    >World's 4<sup>th</sup> largest pigment producer</strong
-                  >. I managed a team of 20 men to keep the high uptime by
-                  managing maintenance activities.
+                <li
+                  class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+                >
+                  Product Management
                 </li>
               </ul>
-            </li>
-          </ul>
+            </div>
+            <!-- FRONTEND SKILLS -->
+            <div class="my-3 mx-auto text-center px-5 max-w-sm">
+              <h3 class="uppercase text-greenBlue">Front-end</h3>
+              <ul>
+                <li
+                  class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+                >
+                  HTML
+                </li>
+                <li
+                  class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+                >
+                  CSS
+                </li>
+                <li
+                  class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+                >
+                  JS
+                </li>
+                <li
+                  class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+                >
+                  jQuery
+                </li>
+                <li
+                  class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+                >
+                  BootStrap
+                </li>
+                <li
+                  class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+                >
+                  TailwindCSS
+                </li>
+                <li
+                  class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+                >
+                  ReactJS
+                </li>
+              </ul>
+            </div>
+            <!-- TOOLS SKILLS -->
+            <div class="my-3 mx-auto text-center px-5 max-w-sm">
+              <h3 class="uppercase text-greenBlue">Tools</h3>
+              <ul>
+                <li
+                  class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+                >
+                  Git
+                </li>
+                <li
+                  class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+                >
+                  BitBucket
+                </li>
+                <li
+                  class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+                >
+                  ClickUp
+                </li>
+                <li
+                  class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+                >
+                  Jira
+                </li>
+                <li
+                  class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+                >
+                  Confluence
+                </li>
+                <li
+                  class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+                >
+                  OpenProject
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <hr />
-    <!-- Spiritual Journey _____________________________________________________________________________-->
-    <div>
-      <div>
-        <div>
-          <i class="fas fa-peace fa-10x"></i>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- TEAM'S SKILLS -->
+    <div id="team_skills" class="text-center bg-green-50 py-10 my-10 px-2 md:px-48">
+      <div class="max-w-4xl mx-auto">
+        <!-- HEADER -->
+        <div class="my-10 flex items-center">
+          <i class="ml-auto fas fa-users fa-4x inline-block text-darkBlue"></i>
+          &nbsp;&nbsp;&nbsp;
+          <h2
+            class="mx-2 mr-auto uppercase font-black inline-block text-darkBlue"
+          >
+            My Team's Skills
+          </h2>
         </div>
-        <div>
-          <h2>My Spiritual Journey</h2>
-          <p>
-            Always wanting to know more, the question,
-            <strong>"WHY DO WE LIVE?"</strong> has definitely bothered several
-            people. To explore answers to the same,
-          </p>
-          <ul>
-            <li>
-              I took the "Happiness Program" by
-              <strong>the Art of Living</strong>
-            </li>
-            <li>Did the 10-Day <strong>Vipassana course</strong></li>
+        <div class="flex flex-wrap">
+          <!-- FRONTEND SKILLS -->
+          <div class="my-3 mx-auto text-center px-5 max-w-sm">
+            <h3 class="uppercase text-greenBlue">Front-end</h3>
+            <ul>
+              <li
+                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+              >
+                ReactJS
+              </li>
+              <li
+                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+              >
+                VueJS
+              </li>
+              <li
+                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+              >
+                ReactNative
+              </li>
+              <li
+                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+              >
+                Flutter
+              </li>
+            </ul>
+          </div>
+          <!-- TOOLS SKILLS -->
+          <div class="my-3 mx-auto text-center px-5 max-w-sm">
+            <h3 class="uppercase text-greenBlue">Tools</h3>
+            <ul>
+              <li
+                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+              >
+                Git
+              </li>
+              <li
+                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+              >
+                ClickUp
+              </li>
+              <li
+                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+              >
+                Jira
+              </li>
+            </ul>
+          </div>
+          <!-- MOBILE SKILLS -->
+          <div class="my-3 mx-auto text-center px-5 max-w-sm">
+            <h3 class="uppercase text-greenBlue">Mobile</h3>
+            <ul>
+              <li
+                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+              >
+                Flutter
+              </li>
+              <li
+                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+              >
+                ReactNative
+              </li>
+              <li
+                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+              >
+                Firebase
+              </li>
+            </ul>
+          </div>
+          <!-- BACKEND SKILLS -->
+          <div class="my-3 mx-auto text-center px-5 max-w-sm">
+            <h3 class="uppercase text-greenBlue">Backend & Databases</h3>
+            <ul>
+              <li
+                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+              >
+                Laravel
+              </li>
+              <li
+                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+              >
+                django
+              </li>
+
+              <li
+                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+              >
+                NodeJS
+              </li>
+              <li
+                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+              >
+                MongoDB
+              </li>
+              <li
+                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+              >
+                mySQL
+              </li>
+              <li
+                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+              >
+                AWS DynamoDB
+              </li>
+              <li
+                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+              >
+                postgreSQL
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- PROFESSIONAL EXPERIENCE SECTION _____________________________________________________________________________-->
+    <div id="professional_experience" class="my-10 px-2 md:px-48">
+      <div class="max-w-4xl mx-auto">
+        <!-- HEADER -->
+        <div class="flex text-center items-center">
+          <i
+            class="ml-auto fas fa-briefcase fa-4x inline-block text-darkBlue"
+          ></i>
+          &nbsp;&nbsp;&nbsp;
+          <h2
+            class="mx-2 mr-auto uppercase font-black inline-block text-darkBlue"
+          >
+            Professional Experience
+          </h2>
+        </div>
+        <!-- INTRO -->
+        <p class="my-6 text-justify">I've been an academician and a researcher, worked in mechanical
+            engineering operations and maintenance, led a software development
+            team at an IT services industry and now work as freelance software
+            developer and product manager. Some of my earlier engagements
+            include:
+        </p>
+        <!-- LIST OF ENGAGEMENTS -->
+        <ul class="ml-5 mr-2 text-greenBlue">
+          <li class="border-greenBlue font-bold border-2 m-2 p-2 inline-block">
+            IIT Madras
+          </li>
+          <li class="border-greenBlue font-bold border-2 m-2 p-2 inline-block">
+            Dr. Babasaheb Ambedkar Technological University, Lonere
+          </li>
+          <li class="border-greenBlue font-bold border-2 m-2 p-2 inline-block">
+            CSMSS Chh. Shahu College of Engineering, Aurangabad
+          </li>
+          <li class="border-greenBlue font-bold border-2 m-2 p-2 inline-block">
+            Virama Laminates Pvt. Ltd.
+          </li>
+          <li class="border-greenBlue font-bold border-2 m-2 p-2 inline-block">
+            Intellection Software and Technologies Pvt. Ltd.
+          </li>
+          <li class="border-greenBlue font-bold border-2 m-2 p-2 inline-block">
+            Center for Industrial Consultancy and Sponsored Research (ICSR) -
+            IIT Madras
+          </li>
+          <li class="border-greenBlue font-bold border-2 m-2 p-2 inline-block">
+            JSW Steel Ltd.
+          </li>
+          <li class="border-greenBlue font-bold border-2 m-2 p-2 inline-block">
+            Sudarshan Chemical Industries Ltd.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- SPIRITUAL JOURNEY _____________________________________________________________________________-->
+    <div id="spritual_journey" class="my-10 px-2 bg-green-50 py-10 md:px-48">
+      <div class="max-w-4xl mx-auto">
+        <!-- HEADER -->
+        <div class="flex text-center items-center">
+          <i class="ml-auto fas fa-peace fa-4x inline-block text-darkBlue"></i>
+          &nbsp;&nbsp;&nbsp;
+          <h2
+            class="mx-2 mr-auto uppercase font-black inline-block text-darkBlue"
+          >
+            Spiritual Journey
+          </h2>
+        </div>
+        <!-- INTRO -->
+        <p class="mt-6 text-justify">
+          Always wanting to know more, the question,
+          <strong>"WHY DO WE LIVE?"</strong> has definitely bothered several
+          people. To explore answers to the same, I did numerous things like:
+        </p>
+        <!-- LIST OF RELATED ACTIVITIES -->
+        <div class="">
+          <ul class="list-disc ml-5 mr-2">
             <li>
               Read books like:
-              <ul>
+              <ul class="list-disc ml-5 mr-2">
                 <li>Man's search for meaning by Viktor Frankl</li>
                 <li>Many lives, many masters by Brian Weiss</li>
                 <li>Only love is real by Brian Weiss</li>
@@ -202,151 +470,225 @@
                 </li>
               </ul>
             </li>
-          </ul>
-          <p>And did a lot of activities!</p>
-        </div>
-      </div>
-    </div>
-    <hr />
-    <!-- Honors and Achievements _____________________________________________________________________________-->
-    <div>
-      <div>
-        <div>
-          <i class="fas fa-trophy fa-10x"></i>
-        </div>
-        <div>
-          <h2>Honors and Achievements</h2>
-          <ul>
             <li>
-              Research:
-              <ul>
-                <li>
-                  A recognized
-                  <strong
-                    >reviewer for the International Journal of Refrigeration,
-                    Elsevier</strong
-                  >
-                </li>
-                <li>
-                  <strong
-                    >Published a paper in the International Journal of
-                    Low-Carbon Technologies, Oxford University Press</strong
-                  >
-                </li>
-                <li>
-                  <strong
-                    >Presented my research work at the 12<sup>th</sup> IIR
-                    Natural Working Fluids Conference</strong
-                  >
-                </li>
-              </ul>
+              I took the "Happiness Program" by
+              <strong>the Art of Living</strong>
             </li>
-            <li>
-              Academics:
-              <ul>
-                <li>M.Tech <strong>University Gold Medalist</strong>!</li>
-                <li>
-                  Qualified Graduate Aptitude Test in Engineering
-                  (<strong>GATE</strong>) thrice!
-                </li>
-              </ul>
-            </li>
-            <li>
-              Volunteering and societal contribution:
-              <ul>
-                <li>
-                  Served as the
-                  <strong>President of ISHRAE Student Chapter</strong> - a
-                  reputed professional body!
-                </li>
-                <li>
-                  Volunteered for
-                  <strong>managing several University events</strong>!
-                </li>
-              </ul>
-            </li>
-            <li>
-              Sports and cultural activities:
-              <ul>
-                <li>
-                  Won University level <strong>basketball</strong> championship
-                </li>
-                <li>Bagged <strong>prize in acting</strong></li>
-              </ul>
-            </li>
+            <li>Did the 10-Day <strong>Vipassana course</strong></li>
+            <li>And did a lot of activities!</li>
           </ul>
         </div>
       </div>
     </div>
-    <hr />
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- HONORS AND ACHIEVEMENTS _____________________________________________________________________________-->
+    <div id="honors_achievements" class="my-10 px-2 py-10 md:px-48">
+      <div class="max-w-4xl mx-auto">
+        <!-- HEADER -->
+        <div class="flex text-center items-center">
+          <i class="ml-auto fas fa-trophy fa-4x inline-block text-darkBlue"></i>
+          &nbsp;&nbsp;&nbsp;
+          <h2
+            class="mx-2 mr-auto uppercase font-black inline-block text-darkBlue"
+          >
+            Honors and Achievements
+          </h2>
+        </div>
+        <!-- INTRO -->
+        <p class="mt-6 text-justify">
+          Being curious and constantly challenging myself to do better than I
+          did earlier, on my path, I made some small achievements. Some of these
+          are,
+        </p>
+        <!-- LIST OF RELATED ACTIVITIES -->
+        <ul class="list-disc ml-5 mr-2 text-justify">
+          <li>
+            Research: You can view
+            <a
+              href="https://scholar.google.com/citations?user=sU6SKysAAAAJ&hl=en&oi=ao"
+              target="_blank"
+              class="underline text-blue-500"
+              >my Google Scholar profile by clicking here</a
+            >. What I've achieved so far:
+            <ul class="list-disc ml-5 mr-2">
+              <li>
+                A recognized
+                <strong
+                  >reviewer for the International Journal of Refrigeration,
+                  Elsevier</strong
+                >
+              </li>
+              <li>
+                <strong
+                  >Published a paper in the International Journal of Low-Carbon
+                  Technologies, Oxford University Press</strong
+                >
+              </li>
+              <li>
+                <strong
+                  >Presented my research work at the 12<sup>th</sup> IIR Natural
+                  Working Fluids Conference</strong
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            Academics:
+            <ul class="list-disc ml-5 mr-2">
+              <li>M.Tech <strong>University Gold Medalist</strong>!</li>
+              <li>
+                Qualified Graduate Aptitude Test in Engineering
+                (<strong>GATE</strong>) thrice!
+              </li>
+            </ul>
+          </li>
+          <li>
+            Volunteering and societal contribution:
+            <ul class="list-disc ml-5 mr-2">
+              <li>
+                Served as the
+                <strong>President of ISHRAE Student Chapter</strong> - a reputed
+                professional body!
+              </li>
+              <li>
+                Volunteered for
+                <strong>managing several University events</strong>!
+              </li>
+            </ul>
+          </li>
+          <li>
+            Sports and cultural activities:
+            <ul class="list-disc ml-5 mr-2">
+              <li>
+                Won University level <strong>basketball</strong> championship
+              </li>
+              <li>Bagged <strong>prize in acting</strong></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
     <!-- EDUCATION _____________________________________________________________________________-->
-    <div>
-      <div>
-        <div>
-          <i class="fas fa-user-graduate fa-10x"></i>
+    <div id="education" class="my-10 px-2 py-10 md:px-48 bg-green-50">
+      <div class="max-w-4xl mx-auto">
+        <!-- HEADER -->
+        <div class="flex text-center items-center">
+          <i
+            class="ml-auto fas fa-user-graduate fa-4x inline-block text-darkBlue"
+          ></i>
+          &nbsp;&nbsp;&nbsp;
+          <h2
+            class="mx-2 mr-auto uppercase font-black inline-block text-darkBlue"
+          >
+            Education
+          </h2>
         </div>
-        <div>
-          <h2>Education Summary</h2>
-          <ul>
-            <li>
-              Multiple certifications including
-              <ul>
-                <li>Fundamental knowledge - HTML, CSS, JS</li>
-                <li>Full-stack web development (MERN Stack)</li>
-                <li>Python - pandas</li>
-                <li>MongoDB</li>
-                <li>SDLC</li>
-                <li>Scrum</li>
-                <li>Agile</li>
-                <li>Research methodology</li>
-              </ul>
-            </li>
-            <li><strong>IIT Madras Ph.D. dropout</strong></li>
-            <li>
-              M.Tech Thermal and Fluids Engineering
-              <strong>Gold Medallist</strong>
-            </li>
-            <li>B.Tech Mechanical Engineering</li>
-          </ul>
+        <!-- INTRO -->
+        <p class="mt-6 text-justify">
+          Education has been a key part of my life. I've always tried to fit
+          maximum learning in the available time. I've done numerous courses and
+          scored good marks throughout the career. These inlude:
+        </p>
+        <!-- LIST OF RELATED ACTIVITIES -->
+        <div class="flex flex-wrap m-2 p-2">
+          <div
+            class="max-w-sm inline-block border-darkBlue text-darkBlue border-2 p-2 my-2 shadow-lg mx-auto"
+          >
+            <p class="text-center text-black">Formal Education</p>
+            <hr class="border-black" />
+            <ul class="list-disc p-3">
+              <li>IIT Madras Ph.D. dropout</li>
+              <li>
+                M.Tech Thermal and Fluids Engineering Gold Medallist with a CGPA
+                of 8.52/10
+              </li>
+              <li>B.Tech Mechanical Engineering with a CGPA of 8.02/10</li>
+              <li>
+                Secured 84.67% in HSC with 97/100 in Physics and 97/100 in Maths
+              </li>
+              <li>
+                Secured 82.30% in SSC with 147/150 in Maths and 93/100 in
+                Science
+              </li>
+            </ul>
+          </div>
+          <div
+            class="max-w-sm inline-block border-darkBlue text-darkBlue border-2 p-2 my-2 shadow-lg mx-auto"
+          >
+            <p class="text-center text-black">
+              Online Certifications and Courses for Tech Skills
+            </p>
+            <hr class="border-black" />
+            <ul class="list-disc p-3">
+              <li>HTML - Passed LinkedIn Assessments</li>
+              <li>CSS - Passed LinkedIn Assessments</li>
+              <li>
+                JS - Passed LinkedIn Assessments and Completed Udemy Course
+              </li>
+              <li>MERN Stack - Udemy Course</li>
+              <li>Python - Udemy Course</li>
+              <li>MongoDB - Udemy Course</li>
+              <li>Chatbots with Dialogflow - Udemy Course</li>
+            </ul>
+          </div>
+          <div
+            class="max-w-sm inline-block border-darkBlue text-darkBlue border-2 p-2 my-2 shadow-lg mx-auto"
+          >
+            <p class="text-center text-black">
+              Management, Productivity and Others
+            </p>
+            <hr class="border-black" />
+            <ul class="list-disc p-3">
+              <li>Scrum - LinkedIn Learning Course and Udemy Course</li>
+              <li>Agile - LinkedIn Learning Course and Udemy Course</li>
+              <li>Jira - Multiple LinkedIn Learning Courses</li>
+              <li>SDLC - Udemy Course</li>
+              <li>Research Methodology</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    <hr />
 
-    <!-- ContactMe _____________________________________________________________________________-->
-
-    <div>
-      <div>
-        <div>
-          <i class="fas fa-address-book fa-10x"></i>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- GET IN TOUCH _____________________________________________________________________________-->
+    <div id="get-in-touch">
+      <div class="flex items-center text-darkBlue mx-2">
+        <div class="ml-auto mr-2">
+          <i class="fas fa-address-book fa-8x"></i>
         </div>
-        <div>
-          <h2>Get In Touch</h2>
-          <p>
+        <div class="mr-auto ml-2">
+          <h1>Get In Touch</h1>
+          <p class="font-extrabold">
             E-Mail: sshet24@gmail.com<br />
             Mobile: (+91)7588106345, (+91)8169172626<br />
           </p>
+          <a href="https://www.linkedin.com/in/shrikantshet" target="_blank"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+          <a href="https://www.facebook.com/shrikant.shet.94" target="_blank"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+          <a href="https://twitter.com/shrikantshet" target="_blank"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
         </div>
       </div>
     </div>
-    <!-- Networking _____________________________________________________________________________-->
-    <div class="networking">
-      <a href="https://www.linkedin.com/in/shrikantshet" target="_blank"
-        ><i class="fab fa-linkedin fa-2x"></i
-      ></a>
-      <a href="https://www.facebook.com/shrikant.shet.94" target="_blank"
-        ><i class="fab fa-facebook fa-2x"></i
-      ></a>
-      <a href="https://twitter.com/shrikantshet" target="_blank"
-        ><i class="fab fa-twitter fa-2x"></i
-      ></a>
 
-      <p>&copy;2020 Shrikant Shet</p>
-    </div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- COPYRIGHT -->
+    <div class="mt-4 mx-2">&copy;2021 Shrikant Shet</div>
   </body>
 </html>
