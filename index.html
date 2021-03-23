@@ -50,7 +50,7 @@
      scroll-behavior: smooth;
       }
     </style>
-    <script>
+    <!-- <script>
       const showMenu = () => {
       document.getElementById("menubutton").style.display='none';
       document.getElementById("menubar").style.display='block';
@@ -59,33 +59,9 @@
       document.getElementById("menubar").style.display='none';
       document.getElementById("menubutton").style.display='block';
       }
-    </script>
+    </script> -->
   </head>
   <body class="bg-white mx-auto">
-          <button class="fixed right-0 bottom-0 bg-darkBlue p-2 my-1 mx-1 rounded-full" id="menubutton" onclick="showMenu()"><i class="fas fa-bars fa-2x inline-block text-white m-1"></i></button>
-          
-    <div id="menubar" style="display: none; outline: none;">
-      <div class="fixed right-0 bottom-0 bg-darkBlue p-2 my-1 mx-1 rounded-full  flex items-center">
-        <!-- Menu -->
-          <!-- My Skills -->
-          <a href="#my_skills" onclick=""><i class="fas fa-tools fa-2x inline-block text-white m-0.5"></i></a>
-          <!-- My Team's Skills -->
-          <a href="#team_skills"><i class="fas fa-users fa-2x inline-block text-white m-0.5"></i></a>
-          <!-- Professional Experience -->
-          <a href="#professional_experience"><i class="fas fa-briefcase fa-2x inline-block text-white m-0.5"></i></a>
-          <!-- Spiritual Journey -->
-          <a href="#spritual_journey"><i class="fas fa-peace fa-2x inline-block text-white m-0.5"></i></a>
-          <!-- Honors and Achievements -->
-          <a href="#honors_achievements"><i class="fas fa-trophy fa-2x inline-block text-white m-0.5"></i></a>
-          <!-- Education -->
-          <a href="#education"><i class="fas fa-user-graduate fa-2x inline-block text-white m-0.5"></i></a>
-          <!-- Get in Touch -->
-          <a href="#get-in-touch"><i class="fas fa-address-book fa-2x inline-block text-white m-0.5"></i></a>
-          <!-- CLOSE -->
-          <button onclick="hideMenu()"><i class="fas fa-times fa-2x inline-block text-white m-0.5"></i></button>
-        <!--  -->
-      </div>
-    </div>
     
       <!-- PROFILE HEADER _____________________________________________________________________________-->
       <div
@@ -103,7 +79,7 @@
         <div class="ml-2 md:mr-auto md:max-w-lg">
           <h1 class="uppercase text-darkBlue mt-10 md:mt-0">Shrikant Shet</h1>
           <h2 class="text-greenBlue">
-            Freelance Software Developer &<br />Product Manager
+            Fullstack Developer
           </h2>
           <p class="text-justify my-3 text-black">
             I'm a <strong>multipotentialite</strong> living life to the fullest
@@ -203,6 +179,11 @@
                 <li
                   class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
                 >
+                  NextJS
+                </li>
+                <li
+                  class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+                >
                   ChakraUI
                 </li>
                 <li
@@ -213,12 +194,22 @@
                 <li
                   class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
                 >
+                  Apollo Client
+                </li>
+                <li
+                  class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+                >
                   Formik
                 </li>
                 <li
                   class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
                 >
                   Yup
+                </li>
+                <li
+                  class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+                >
+                  TypeScript
                 </li>
               </ul>
             </div>
@@ -239,12 +230,17 @@
               <li
                 class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
               >
-                MongoDB
+                GraphQL
               </li>
               <li
                 class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
               >
                 postgreSQL
+              </li>
+              <li
+                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
+              >
+                TypeScript
               </li>
             </ul>
           </div>
@@ -292,128 +288,80 @@
     <!--  -->
     <!--  -->
     <!--  -->
-    <!-- TEAM'S SKILLS -->
-    <div id="team_skills" class="text-center bg-green-50 py-10 my-10 px-2 md:px-48">
+    <!-- MY PROJECTS -->
+    <div id="team_skills" class="bg-green-50 py-10 my-10 px-2 md:px-48">
       <div class="max-w-4xl mx-auto">
         <!-- HEADER -->
         <div class="my-10 flex items-center">
-          <i class="ml-auto fas fa-users fa-4x inline-block text-darkBlue"></i>
+          <i class="ml-auto fas fa-code fa-4x inline-block text-darkBlue"></i>
           &nbsp;&nbsp;&nbsp;
           <h2
             class="mx-2 mr-auto uppercase font-black inline-block text-darkBlue"
           >
-            My Team's Skills
+            My Projects
           </h2>
         </div>
-        <div class="flex flex-wrap">
-          <!-- FRONTEND SKILLS -->
-          <div class="my-3 mx-auto text-center px-5 max-w-sm">
-            <h3 class="uppercase text-greenBlue">Front-end</h3>
-            <ul>
-              <li
-                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-              >
-                ReactJS
+        <p class="my-6 text-justify">Having worked in an IT services industry, my team and I delivered projects of about 8900 hours in 2 years. But as you rightly know, those projects are bound by a confidentiality clause, which legally obstruct me from disclosing those. What I can disclose though, are my projects as a freelancer, and here they are:
+        </p>
+        
+        <!-- LIST OF RELATED ACTIVITIES -->
+        <div class="flex flex-wrap m-2 p-2">
+          <div
+            class="max-w-sm inline-block border-darkBlue text-darkBlue border-2 p-2 my-2 shadow-lg mx-auto"
+          >
+            <p class="text-center text-black"><a href="http://vishanema.org/" target="blank" class="underline text-blue-500">A Community Management App</a></p>
+            <hr class="border-black" />
+            <ul class="list-disc p-3 text-justify">
+              <li>Currently live</li>
+              <li>A progressive web application for managing a minority community with world population of about 10k.</li>
+              <li>Multiple modules with low complexity - user management with roles and permissions, family management, profile management, explore members
               </li>
-              <li
-                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-              >
-                VueJS
+              <li>My role: About 95% of the project, right from requirement gathering, to design, development, testing, production server configuration and deployment</li>
+              <li>Front-end: ReactJS, ChakraUI, Axios, Formik, Yup</li>
+              <li>
+                Backend & database: NodeJS, ExpressJS, TypeORM, postgreSQL
               </li>
-              <li
-                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-              >
-                ReactNative
-              </li>
-              <li
-                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-              >
-                Flutter
+              <li>
+                Other tools and skills involved: Nginx, AWS EC2, Git
               </li>
             </ul>
           </div>
-          <!-- TOOLS SKILLS -->
-          <div class="my-3 mx-auto text-center px-5 max-w-sm">
-            <h3 class="uppercase text-greenBlue">Tools</h3>
-            <ul>
-              <li
-                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-              >
-                Git
+          <div
+            class="max-w-sm inline-block border-darkBlue text-darkBlue border-2 p-2 my-2 shadow-lg mx-auto"
+          >
+            <p class="text-center text-black">
+              <a href="https://www.aghpl.com/" target="blank" class="underline text-blue-500">A Product for AGHPL - A Fintech</a>
+            </p>
+            <hr class="border-black" />
+            <ul class="list-disc p-3 text-justify">
+              <li>Currently under development</li>
+              <li>A web application that takes trading data from Kite's APIs, facilitates backtesting of trading strategies, and delivers live trading advisory over Telegram .</li>
+              <li>A very complex application involving integration with multiple third party platforms, web socket, and extrememly critical since several existing clients of AGHPL will take trading positions in market - realtime, based on the advisory delivered.</li>
+              <li>My role: About 30% of the development. </li>
+              <li>Front-end: NextJS, ChakraUI, Apollo Client, TypeScript</li>
+              <li>
+                Backend & database: NodeJS, ExpressJS, GraphQL, Axios, TypeScript, postgreSQL
               </li>
-              <li
-                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-              >
-                ClickUp
-              </li>
-              <li
-                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-              >
-                Jira
-              </li>
-            </ul>
-          </div>
-          <!-- MOBILE SKILLS -->
-          <div class="my-3 mx-auto text-center px-5 max-w-sm">
-            <h3 class="uppercase text-greenBlue">Mobile</h3>
-            <ul>
-              <li
-                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-              >
-                Flutter
-              </li>
-              <li
-                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-              >
-                ReactNative
-              </li>
-              <li
-                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-              >
-                Firebase
+              <li>
+                Other tools and skills involved: Git
               </li>
             </ul>
           </div>
-          <!-- BACKEND SKILLS -->
-          <div class="my-3 mx-auto text-center px-5 max-w-sm">
-            <h3 class="uppercase text-greenBlue">Backend & Databases</h3>
-            <ul>
-              <li
-                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-              >
-                Laravel
-              </li>
-              <li
-                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-              >
-                django
-              </li>
-
-              <li
-                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-              >
-                NodeJS
-              </li>
-              <li
-                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-              >
-                MongoDB
-              </li>
-              <li
-                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-              >
-                mySQL
-              </li>
-              <li
-                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-              >
-                AWS DynamoDB
-              </li>
-              <li
-                class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-              >
-                postgreSQL
-              </li>
+          <div
+            class="max-w-sm inline-block border-darkBlue text-darkBlue border-2 p-2 my-2 shadow-lg mx-auto"
+          >
+            <p class="text-center text-black">
+              <a href="http://getparva.com/" target="blank" class="underline text-blue-500">Parva - A Community Monetization Platform for Community Entrepreneurs</a>
+            </p>
+            <hr class="border-black" />
+            <ul class="list-disc p-3 text-justify">
+              <li>Currently live</li>
+              <li>Parva provides an online platform where community organizers onboard their communities, and, run communities effectively.</li>
+              <li>The community members can explore and join multiple communities, driving the overall growth of the platform and keeping the traction.</li>
+              <li>My role: Provided management consulting to streamline the development process</li>
+              <li>Front-end: ReactJS, Ant Design, Axios</li>
+              <li>Backend: Django</li>
+              <li>Mobile: Native Android App in Java</li>
             </ul>
           </div>
         </div>
