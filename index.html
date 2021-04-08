@@ -10,9 +10,9 @@
 
     <!-- Tailwind -->
     <!-- DEVELOPMENT CSS -->
-    <!-- <link rel="stylesheet" href="./css/development.css" /> -->
+    <link rel="stylesheet" href="./css/development.css" />
     <!-- PRODUCTION CSS -->
-    <link rel="stylesheet" href="./css/prod.css" />
+    <!-- <link rel="stylesheet" href="./css/prod.css" /> -->
 
     <!-- Fonts, Icons -->
     <link rel="icon" href="images\favicon.ico" />
@@ -25,8 +25,15 @@
       src="https://kit.fontawesome.com/27fded497b.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162862665-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    <!-- TO DO: Add Google Analytics Tag -->
+      gtag('config', 'UA-162862665-1');
+    </script>
     <style>
       html {
         font-family: 'Ubuntu', sans-serif;
@@ -90,7 +97,8 @@
           <p class="text-justify my-3 text-black">
             And I currently work with a team of freelance software developers!
           </p>
-          <a href="\Shrikant Shet_FullStack_Resume.pdf" target="blank" class="underline text-blue-500">Download Detailed Resume</a>
+          <a href="\Shrikant Shet_FullStack_Resume.pdf" target="blank" class="bg-white text-blue-500 border-solid border-2 border-blue-500 p-2 rounded-full"><i class="fas fa-arrow-circle-down"></i>
+            Download Resume</a>
         </div>
       </div>
       <!--  -->
