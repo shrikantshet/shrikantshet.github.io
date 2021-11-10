@@ -1,3 +1,4 @@
 node_modules/
 /notes4future.txt
 .idea
+.DS_Store
