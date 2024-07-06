@@ -961,6 +961,8 @@
 </div>
 
 <!-- COPYRIGHT -->
-<div class="pt-4 mx-2 bg-green-50">&copy;2022 Shrikant Shet</div>
+<div class="pt-4 mx-2 bg-green-50">&copy;<span id="copyright">
+        <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+    </span> Shrikant Shet</div>
 </body>
 </html>
