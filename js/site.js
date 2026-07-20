@@ -311,12 +311,14 @@ function renderTestimonials() {
 }
 
 function renderContactDock() {
+  const emailComposeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(contact.email)}`;
   const whatsappMessage = encodeURIComponent(contact.whatsappMessage);
   const phoneLabel = `Call Shrikant at ${contact.phoneDisplay}`;
 
   contactDock.innerHTML = `
     <a class="contact-dock__link contact-dock__link--email"
-      href="mailto:${escapeHTML(contact.email)}"
+      href="${escapeHTML(emailComposeUrl)}"
+      target="_blank" rel="noreferrer"
       aria-label="Email Shrikant" title="Email Shrikant">
       <span class="contact-dock__icon" aria-hidden="true">✉</span>
       <span class="contact-dock__label" aria-hidden="true">Email</span>

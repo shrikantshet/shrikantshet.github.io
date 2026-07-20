@@ -120,6 +120,7 @@ assert(data.projects.some((project) => project.tabs.length > 1), "At least one p
 assert(data.experiences.some((experience) => experience.tabs.length > 1), "At least one timeline entry should demonstrate multi-tab membership");
 assert(html.includes("data-theme-toggle"), "Theme toggle is missing from the navigation");
 assert(html.includes("data-contact-dock"), "Floating contact dock is missing");
+assert(!/<a\b[^>]*href="mailto:/i.test(html), "Clickable email actions must use the browser-based compose flow");
 assert(expectedNavigationTargets.every((target) => html.includes(`<a href="${target}">`)), "Primary navigation must link all eight numbered sections");
 
 if (failures.length) {
