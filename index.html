@@ -1,970 +1,403 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <meta charset="utf-8"/>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+      name="description"
+      content="Shrikant Shet is a Mumbai-based fractional CTO and AI-equipped software engineer helping teams with product strategy, architecture, React and Next.js development, deployment, and technical leadership."
     />
-    <title>Shrikant Shet</title>
-
-    <!-- Tailwind -->
-    <!-- DEVELOPMENT CSS -->
-<!--        <link rel="stylesheet" href="./css/development.css"/>-->
-    <!-- PRODUCTION CSS -->
-    <link rel="stylesheet" href="./css/prod.css"/>
-
-    <!-- Fonts, Icons -->
-    <link rel="icon" href="images/favicon.ico"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
-    <link
-            href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
-            rel="stylesheet"
+    <meta name="author" content="Shrikant Shet" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="theme-color" content="#191b18" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:site_name" content="Shrikant Shet" />
+    <meta property="og:title" content="Shrikant Shet — Fractional CTO &amp; AI-Equipped Software Engineer" />
+    <meta
+      property="og:description"
+      content="From ambiguous requirements to deployed and maintained products: fractional CTO leadership, full-stack engineering, and AI-equipped delivery."
     />
-    <script
-            src="https://kit.fontawesome.com/27fded497b.js"
-            crossorigin="anonymous"
-    ></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162862665-1"></script>
+    <meta property="og:url" content="https://shrikantshet.github.io/" />
+    <meta property="og:image" content="https://shrikantshet.github.io/images/og-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Shrikant Shet — engineer across layers, fractional CTO, consultant, and software developer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Shrikant Shet — Fractional CTO &amp; AI-Equipped Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Product strategy, technical leadership, full-stack engineering, and AI-equipped delivery from requirements through maintenance."
+    />
+    <meta name="twitter:image" content="https://shrikantshet.github.io/images/og-card.png" />
+    <link rel="canonical" href="https://shrikantshet.github.io/" />
+    <link rel="icon" href="./images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'UA-162862665-1');
+      (() => {
+        let savedTheme = null;
+        try {
+          savedTheme = localStorage.getItem("portfolio-theme");
+        } catch {}
+        const theme = savedTheme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      })();
     </script>
-    <style>
-        html {
-            font-family: 'Ubuntu', sans-serif;
-        }
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Instrument+Sans:wdth,wght@75..100,400..700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Shrikant Shet | Fractional CTO &amp; AI-Equipped Software Engineer</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://shrikantshet.github.io/#website",
+            "url": "https://shrikantshet.github.io/",
+            "name": "Shrikant Shet",
+            "alternateName": "Shrikant Shet Portfolio",
+            "inLanguage": "en-IN"
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://shrikantshet.github.io/#profile",
+            "url": "https://shrikantshet.github.io/",
+            "name": "Shrikant Shet — Fractional CTO and AI-Equipped Software Engineer",
+            "dateModified": "2026-07-14",
+            "isPartOf": { "@id": "https://shrikantshet.github.io/#website" },
+            "mainEntity": {
+              "@type": "Person",
+              "@id": "https://shrikantshet.github.io/#person",
+              "name": "Shrikant Shet",
+              "url": "https://shrikantshet.github.io/",
+              "image": "https://shrikantshet.github.io/images/selfie_formal.jpg",
+              "description": "Mumbai-based fractional CTO, consultant, and AI-equipped full-stack software engineer working from product requirements through deployment and maintenance.",
+              "email": "mailto:sshet24@gmail.com",
+              "telephone": "+917588106345",
+              "jobTitle": ["Fractional CTO", "Consultant", "Software Engineer"],
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Mumbai",
+                "addressCountry": "IN"
+              },
+              "knowsAbout": [
+                "Fractional CTO leadership",
+                "AI-assisted software engineering",
+                "Product engineering",
+                "React",
+                "Next.js",
+                "Node.js",
+                "TypeScript",
+                "Python",
+                "Software architecture",
+                "AWS",
+                "Product management",
+                "Project management",
+                "Industrial IoT"
+              ],
+              "sameAs": [
+                "https://www.linkedin.com/in/shrikantshet/",
+                "https://scholar.google.com/citations?user=sU6SKysAAAAJ"
+              ]
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-        body {
-            font-size: 1rem;
-        }
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Shrikant Shet, home">
+        <span class="wordmark__mark">SS</span>
+        <span class="wordmark__text">Shrikant Shet</span>
+      </a>
+      <nav id="site-navigation" class="site-navigation" aria-label="Primary navigation" data-navigation>
+        <a href="#testimonials"><span>01</span> Testimonials</a>
+        <a href="#ai"><span>02</span> AI + skills</a>
+        <a href="#work"><span>03</span> Work files</a>
+        <a href="#timeline"><span>04</span> Timeline</a>
+        <a href="#practice"><span>05</span> Practice</a>
+        <a href="#foundations"><span>06</span> Foundations</a>
+        <a href="#community"><span>07</span> Community</a>
+        <a href="#contact"><span>08</span> Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch color theme" data-theme-toggle>
+        <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">☾</span>
+        <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀</span>
+      </button>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-button>
+        <span>Menu</span>
+        <span class="menu-button__lines" aria-hidden="true"></span>
+      </button>
+    </header>
 
-        h1 {
-            font-size: 1.75rem;
-            font-weight: bold;
-        }
+    <main id="main">
+      <section id="top" class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <p class="eyebrow"><span>Fractional leadership · Product engineering</span><span>Mumbai, India</span></p>
+          <h1 id="hero-title">Fractional CTO.<br /><em>AI-equipped</em><br />builder.</h1>
+          <p class="hero__lede">
+            I help founders and teams turn ambiguous requirements into dependable software—owning product discovery,
+            architecture, full-stack development, deployment, and maintenance.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="mailto:sshet24@gmail.com">
+              Start a conversation <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button button--quiet" href="#work">See selected work <span aria-hidden="true">↓</span></a>
+          </div>
+          <dl class="hero__facts" aria-label="Career snapshot">
+            <div>
+              <dt>Experience</dt>
+              <dd>2013 → now</dd>
+            </div>
+            <div>
+              <dt>Work files</dt>
+              <dd><span data-project-count>28</span> engagements</dd>
+            </div>
+            <div>
+              <dt>Engagement mode</dt>
+              <dd>Fractional · advisory · delivery</dd>
+            </div>
+          </dl>
+        </div>
 
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-size: 1.25rem;
-            font-weight: bold;
-        }
+        <div class="hero__portrait reveal">
+          <div class="portrait-frame">
+            <img src="./images/selfie_formal.jpg" alt="Portrait of Shrikant Shet" width="918" height="918" />
+            <div class="portrait-frame__label portrait-frame__label--top">Product ↔ Technology</div>
+            <div class="portrait-frame__label portrait-frame__label--bottom">AI ↔ Engineering</div>
+          </div>
+          <p class="portrait-note">
+            <span>Current coordinates</span>
+            Fractional CTO at Callify<br />Consultant at Rance Computer
+          </p>
+        </div>
+      </section>
 
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
-</head>
-<body class="bg-white mx-auto">
+      <section id="testimonials" class="testimonials section-block" aria-labelledby="testimonials-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">01 / Testimonials</p>
+              <h2 id="testimonials-title">What collaborators noticed.</h2>
+            </div>
+            <p>Short reflections from colleagues and clients across software delivery and product work.</p>
+          </div>
+          <div class="testimonial-grid" data-testimonial-grid></div>
+        </div>
+      </section>
 
-<!-- PROFILE HEADER _____________________________________________________________________________-->
-<div
-        class="flex flex-wrap md:flex-nowrap items-center bg-green-50 mb-10 py-12 px-2"
->
-    <!-- PROFILE PIC -->
-    <div class="m-auto md:ml-auto md:mr-2">
-        <img
-                src="images/selfie_formal.jpg"
-                alt="formal_photo"
-                class="rounded-full md:max-w-xs"
-        />
-    </div>
-    <!-- NAME, DESIGNATION, SHORT BIO -->
-    <div class="ml-2 md:mr-auto md:max-w-lg">
-        <h1 class="uppercase text-darkBlue mt-10 md:mt-0">Shrikant Shet <a
-                href="https://www.linkedin.com/in/shrikantshet" target="_blank"
-        ><i class="fab fa-linkedin"></i
-        ></a></h1>
-        <h2 class="text-greenBlue">
-            Fullstack Developer
-        </h2>
-        <p class="text-justify my-3 text-black">
-            I'm a <strong>multipotentialite</strong> living life to the fullest
-            by exploring several domains!
+      <section class="manifesto" aria-label="Professional point of view">
+        <p class="manifesto__index">Point of view</p>
+        <p>
+          Hire me when the useful work lives <em>between disciplines</em>—where a business question becomes a product,
+          a product becomes a system, and somebody must own the result after release.
         </p>
-        <p class="text-justify my-3 text-black">
-            And I currently work with a team of independent consultants!
-        </p>
-        <div class="my-4">
-            <a href="/Shrikant Shet_FullStack_Resume.pdf" target="blank"
-               class="bg-white text-blue-500 border-solid border-2 border-blue-500 p-2 rounded-full"><i
-                    class="fas fa-arrow-circle-down"></i>
-                Download Resume</a>
-        </div>
-    </div>
-</div>
-<!--  -->
-<!--  -->
-<!--  -->
-<!--  -->
-<!-- SKILLS SECTION _____________________________________________________________________________-->
-<!-- SKILLS -->
-<div id="my_skills" class="text-center px-2 md:px-48">
-    <div class="max-w-4xl mx-auto">
-        <!-- HEADER -->
-        <div class="my-10 flex items-center">
-            <i
-                    class="ml-auto fas fa-tools fa-4x inline-block text-darkBlue"
-            ></i>
-            &nbsp;&nbsp;&nbsp;
-            <h2
-                    class="mx-2 mr-auto uppercase font-black inline-block text-darkBlue"
-            >
-                My Skills
-            </h2>
-        </div>
-        <div class="flex flex-wrap">
-            <!-- FRONTEND SKILLS -->
-            <div class="my-3 mx-auto text-center px-5 max-w-sm">
-                <h3 class="uppercase text-greenBlue">Front-end</h3>
-                <ul>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        HTML
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        CSS
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        JavaScript
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        TypeScript
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        ReactJS
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        VueJS
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        NextJS
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        TanStack Query
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        Apollo Client (GraphQL)
-                    </li>
-                </ul>
-            </div>
-            <!-- BACKEND SKILLS -->
-            <div class="my-3 mx-auto text-center px-5 max-w-sm">
-                <h3 class="uppercase text-greenBlue">Backend & Databases</h3>
-                <ul>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        NodeJS
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        tRPC
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        AdonisJS
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        ExpressJS
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        Laravel
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        GraphQL
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        Redis
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        postgreSQL
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        TypeScript
-                    </li>
-                </ul>
-            </div>
-            <!-- TOOLS SKILLS -->
-            <div class="my-3 mx-auto text-center px-5 max-w-sm">
-                <h3 class="uppercase text-greenBlue">Tools</h3>
-                <ul>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        Git
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        BitBucket
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        ClickUp
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        Jira
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        OpenProject
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        Confluence
-                    </li>
-                </ul>
-            </div>
-            <!-- CLOUD SKILLS -->
-            <div class="my-3 mx-auto text-center px-5 max-w-sm">
-                <h3 class="uppercase text-greenBlue">Cloud</h3>
-                <ul class="text-center">
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        Vercel
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        PlanetScale
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        AWS EC2
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        AWS S3
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        AWS CloudFront
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        AWS Lambda
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        AWS Amplify
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        AWS Amplify CLI
-                    </li>
-                </ul>
-            </div>
-            <!-- MANAGEMENT SKILLS -->
-            <div class="my-3 mx-auto text-center px-5 max-w-sm">
-                <h3 class="uppercase text-greenBlue">Management</h3>
-                <ul class="text-center">
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        Agile
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        Scrum
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        Project Management
-                    </li>
-                    <li
-                            class="inline-block bg-darkBlue text-white rounded-lg p-2 my-0.5"
-                    >
-                        Product Management
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<!--  -->
-<!--  -->
-<!--  -->
-<!--  -->
-<!--  -->
-<!-- TESTIMONIALS -->
-<div id="testimonials" class="bg-green-50 py-10 my-10 px-2 md:px-48">
-    <div class="max-w-4xl mx-auto">
-        <!-- HEADER -->
-        <div class="my-10 flex items-center">
-            <i class="ml-auto fas fa-quote-left fa-4x inline-block text-darkBlue"></i>
-            &nbsp;&nbsp;&nbsp;
-            <h2
-                    class="mx-2 mr-auto uppercase font-black inline-block text-darkBlue"
-            >
-                TESTIMONIALS
-            </h2>
-        </div>
-        <p class="my-6 text-justify">Having worked with several industries, the work has always been inspiring. Some
-            kind souls I met in the course of the happy work life, have taken some time to write a few words about me.
-        </p>
+      </section>
 
-        <!-- SOME TESTIMONIALS -->
-        <div class="flex flex-wrap m-2 p-2">
-            <!--TESTOMONIAL 0-->
-            <div
-                    class="max-w-sm inline-block border-darkBlue text-darkBlue border-2 p-2 my-2 shadow-lg mx-auto flex flex-col"
-            >
-                <div class="flex-1"></div>
-                <p class="font-bold text-justify">
-                    Technically sound and going above and beyond are just 2 of the many qualities that Shrikant brings in.
-                </p>
-                <p class="text-right text-sm pt-2">
-                    - Rajeev Gadgil, Founder and Director - WhileOne Techsoft Pvt. Ltd.
-                </p>
-                <div class="flex-1"></div>
-                <p class="text-xs py-2">
-                    I reported to Rajeev at WhileOne Techsoft Pvt. Ltd.
-                </p>
-            </div>
-            <!--TESTOMONIAL 1-->
-            <div
-                    class="max-w-sm inline-block border-darkBlue text-darkBlue border-2 p-2 my-2 shadow-lg mx-auto flex flex-col"
-            >
-                <div class="flex-1"></div>
-                <p class="font-bold text-justify">
-                    Shrikant is a quick learner and is very pro-active.
-                    He has in-depth knowledge of front-end technologies. He is a great colleague. and it is fun to work with him.
-                </p>
-                <p class="text-right text-sm pt-2">
-                    - Sameer Natu, Founder and Director - WhileOne Techsoft Pvt. Ltd.
-                </p>
-                <div class="flex-1"></div>
-                <p class="text-xs py-2">
-                    I worked in Sameer's team at WhileOne Techsoft Pvt. Ltd.
-                </p>
-            </div>
-            <!--TESTOMONIAL 2-->
-            <div
-                    class="max-w-sm inline-block border-darkBlue text-darkBlue border-2 p-2 my-2 shadow-lg mx-auto flex flex-col"
-            >
-                <div class="flex-1"></div>
-                <p class="font-bold text-justify">
-                    Shrikant is exceptional in understanding business requirements and translating them into a product
-                    vision. His strengths are his sincerity, good communication skills and his ability to quickly
-                    understand business requirements and translate them to technical requirements.
-                </p>
-                <p class="text-right text-sm pt-2">
-                    - Director - NVT Group: International School of Management Excellence (ISME), Bangalore; National
-                    Public School (NPS), Whitefield; NVT Quality Lifestyle
-                </p>
-                <div class="flex-1"></div>
-                <p class="text-xs py-2">
-                    Nitin was my client when I worked at Intellection Software and Technologies Pvt. Ltd.
-                </p>
-            </div>
+      <section class="philosophy-band" aria-labelledby="philosophy-title">
+        <div class="section-shell">
+          <div class="philosophy-band__heading">
+            <p class="eyebrow">Working philosophy</p>
+            <h2 id="philosophy-title">Own the outcome, not only the task.</h2>
+          </div>
+          <div class="philosophy-grid" data-philosophy-grid></div>
         </div>
-    </div>
-</div>
-<!--  -->
-<!--  -->
-<!--  -->
-<!--  -->
-<!--  -->
-<!-- MY PROJECTS -->
-<div id="team_skills" class="py-10 my-10 px-2 md:px-48">
-    <div class="max-w-4xl mx-auto">
-        <!-- HEADER -->
-        <div class="my-10 flex items-center">
-            <i class="ml-auto fas fa-code fa-4x inline-block text-darkBlue"></i>
-            &nbsp;&nbsp;&nbsp;
-            <h2
-                    class="mx-2 mr-auto uppercase font-black inline-block text-darkBlue"
-            >
-                My Projects
-            </h2>
-        </div>
-        <p class="my-6 text-justify">It has been an exciting tech career so far. Here are some of the projects I've
-            recently delivered and I'm working on:
-        </p>
+      </section>
 
-        <!-- LIST OF PROJECTS -->
-        <div class="flex flex-wrap">
-            <!--PROJECT -2-->
-            <div
-                    class="inline-block border-darkBlue text-darkBlue border-2 p-2 my-2 shadow-lg mx-auto"
-            >
-                <p class="text-center text-black">
-                    <a href="https://app.fleetoz.com/" target="blank" class="underline text-blue-500 font-bold">
-                        FleetOZ: A WebApp for B2B Travel Management StartUp - Commutec (Aurafox Solutions)
-                    </a>
-                </p>
-                <hr class="border-black"/>
-                <ul class="list-disc p-3 text-justify">
-                    <li class="my-2"><strong>Brief description:</strong> Under the brand name Commutec, Aurafox Solutions offers travel desk
-                        management (cabs) for businesses. Built a web application from scratch to manage bookings
-                        and invoicing.
-                    </li>
-                    <li class="my-2"><strong>My role:</strong> End to end product management, gathering requirements from all stakeholders to scope features, prioritizing and delivering features, built an IT team from scratch, development, testing, deployment and maintenance.
-                    </li>
-                    <li class="my-2"><strong>Front-end:</strong> ReactJS - NextJS, TanStack Query, TailwindCSS, DaisyUI</li>
-                    <li class="my-2"><strong>Backend & database:</strong> NodeJS, tRPC, mySQL</li>
-                    <li class="my-2">
-                        <strong>Other skills involved:</strong> Git, Vercel, PlanetScale, AWS EC2, AWS S3
-                    </li>
-                    <li class="my-2"><strong>Status:</strong> Live since May 2024, continuous feature addition in progress
-                    </li>
-                </ul>
+      <section id="ai" class="ai-section section-block" aria-labelledby="ai-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">02 / AI-equipped engineering</p>
+              <h2 id="ai-title" data-ai-title>AI-equipped before it was a checkbox.</h2>
             </div>
-            <!--PROJECT -1-->
-            <div
-                    class="inline-block border-darkBlue text-darkBlue border-2 p-2 my-2 shadow-lg mx-auto"
-            >
-                <p class="text-center text-black font-bold">
-                    Frontends for TrustCloud's TrustShare - a Boston Based IT Security and Compliance StartUp
-                </p>
-                <hr class="border-black"/>
-                <ul class="list-disc p-3 text-justify">
-                    <li class="my-2"><strong>Brief description:</strong> Adding features to an existing React
-                        application involving workflows and forms. This involves building an admin panel and a building
-                        frontend for the customers of our product subscribers.
-                    </li>
-                    <li class="my-2"><strong>My role:</strong> Development and support July 2022 onwards. This
-                        product is live and feature addition is ongoing.
-                    </li>
-                    <li class="my-2"><strong>Front-end:</strong> ReactJS</li>
-                    <li class="my-2">
-                        <strong>Other skills involved:</strong> Git
-                    </li>
-                    <li class="my-2"><strong>Status:</strong> Live for last few years, currently feature addition in
-                        progress
-                    </li>
-                </ul>
-            </div>
-            <!--PROJECT 0-->
-            <div
-                    class="inline-block border-darkBlue text-darkBlue border-2 p-2 my-2 shadow-lg mx-auto"
-            >
-                <p class="text-center text-black">
-                  <a href="https://amperecomputing.com/" target="blank" class="underline text-blue-500 font-bold">
-                    Multilingual Corporate Website, Solutions Portal, Developer Portal and Customer Connect for a Silicon Valley based Processor Manufacturer - Ampere Computing
-                  </a>
-                </p>
-                <hr class="border-black"/>
-                <ul class="list-disc p-3 text-justify">
-                    <li class="my-2"><strong>Brief description:</strong> Revamped 3 existing web applications and
-                        developed a new one, building a single WebApp for a Silicon Valley based processor manufacturer.
-                        One of those 3 projects involves delivering confidential data to the client's customers/partners.
-                    </li>
-                    <li class="my-2"><strong>My role:</strong> Development and support October 2021 onwards. This
-                        product is live and feature addition is ongoing.
-                    </li>
-                    <li class="my-2"><strong>Front-end:</strong> NextJS</li>
-                    <li class="my-2">
-                        <strong>Backend & database:</strong> AdonisJS, Strapi CMS, postgreSQL
-                    </li>
-                    <li class="my-2">
-                        <strong>Other skills involved:</strong> AWS Amplify, AWS S3, AWS Lambda, AWS EC2, Nginx
-                    </li>
-                    <li class="my-2"><strong>Status:</strong> Live for last few years, currently feature addition in
-                        progress
-                    </li>
-                </ul>
-            </div>
-            <!--PROJECT 1-->
-            <div
-                    class="inline-block border-darkBlue text-darkBlue border-2 p-2 my-2 shadow-lg mx-auto"
-            >
-                <p class="text-center text-black">
-                    <a href="https://www.aghpl.com/" target="blank" class="underline text-blue-500 font-bold">A Fintech
-                        Product for Brokers</a>
-                </p>
-                <hr class="border-black"/>
-                <ul class="list-disc p-3 text-justify">
-                    <li class="my-2"><strong>Brief description:</strong> A B2B product - web application and mobile
-                        application that
-                        enables brokers and financial managers to manage the accounts of their clients (retail
-                        investors).
-                    </li>
-                    <li class="my-2"><strong>My role:</strong> Development and support March 2021 onwards. This product
-                        has evolved
-                        for last few years, and I'm currently carrying out change requests and providing support.
-                    </li>
-                    <li class="my-2"><strong>Front-end:</strong> VueJS</li>
-                    <li class="my-2">
-                        <strong>Backend & database:</strong> Laravel, postgreSQL, Redis
-                    </li>
-                    <li class="my-2">
-                        <strong>Other skills involved:</strong> Kite integration, Angel integration, Telegram
-                        integration, Git
-                    </li>
-                    <li class="my-2"><strong>Status:</strong> Live for last few years, currently feature addition in
-                        progress
-                    </li>
-                </ul>
-            </div>
-            <!--PROJECT 2-->
-            <div
-                    class="inline-block border-darkBlue text-darkBlue border-2 p-2 my-2 shadow-lg mx-auto"
-            >
-                <p class="text-center text-black">
-                    <a href="https://www.aghpl.com/" target="blank" class="underline text-blue-500 font-bold">A Fintech
-                        Product for Retail Traders</a>
-                </p>
-                <hr class="border-black"/>
-                <ul class="list-disc p-3 text-justify">
-                    <li class="my-2"><strong>Brief description:</strong> A B2C product - web application that takes
-                        trading data from
-                        Kite's APIs, facilitates backtesting of trading
-                        strategies, and delivers live trading advisory over Telegram. A complex application
-                        involving integration with multiple third party platforms, web
-                        socket, and extremely critical since clients will take trading
-                        positions in market - realtime, based on the advisory.
-                    </li>
-                    <li class="my-2"><strong>My role:</strong> Development from March 2021</li>
-                    <li class="my-2"><strong>Front-end:</strong> NextJS, Apollo Client, TypeScript</li>
-                    <li class="my-2">
-                        <strong>Backend & database:</strong> NodeJS, ExpressJS, GraphQL, TypeScript, postgreSQL, Redis
-                    </li>
-                    <li class="my-2">
-                        <strong>Other skills involved:</strong> Telegram integration, Git
-                    </li>
-                    <li class="my-2"><strong>Status:</strong> Under development since January 2021.</li>
-                </ul>
-            </div>
-            <!--PROJECT 3-->
-            <div
-                    class="inline-block border-darkBlue text-darkBlue border-2 p-2 my-2 shadow-lg mx-auto"
-            >
-                <p class="text-center text-black"><a href="https://vishanema.org/" target="blank"
-                                                     class="underline text-blue-500 font-bold">Vishanema's v-Connect: A Community Management
-                    App</a></p>
-                <hr class="border-black"/>
-                <ul class="list-disc p-3 text-justify">
-                    <li class="my-2"><strong>Brief description:</strong> A web application for managing a minority
-                        community with a
-                        world population of about
-                        10k. Multiple modules with low complexity - user management with roles and permissions, family
-                        management, profile management, explore members.
-                    </li>
-                    <li class="my-2"><strong>My role:</strong> Development and support. Solely responsible for
-                        development of the
-                        entire project. The team designed and reviewed code.
-                    </li>
-                    <li class="my-2"><strong>Front-end:</strong> ReactJS</li>
-                    <li class="my-2">
-                        <strong>Backend & database:</strong> NodeJS, ExpressJS, postgreSQL
-                    </li>
-                    <li class="my-2">
-                        <strong>Other skills involved:</strong> Nginx, AWS EC2, Git
-                    </li>
-                    <li class="my-2"><strong>Status:</strong> Live since 9th March 2021.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+            <p data-ai-description></p>
+          </div>
+          <ol class="ai-journey" data-ai-journey></ol>
 
-<!--  -->
-<!--  -->
-<!--  -->
-<!--  -->
-<!-- PROFESSIONAL EXPERIENCE SECTION _____________________________________________________________________________-->
-<div id="professional_experience" class="bg-green-50 py-10 my-10 px-2 md:px-48">
-    <div class="max-w-4xl mx-auto">
-        <!-- HEADER -->
-        <div class="flex text-center items-center">
-            <i
-                    class="ml-auto fas fa-briefcase fa-4x inline-block text-darkBlue"
-            ></i>
-            &nbsp;&nbsp;&nbsp;
-            <h2
-                    class="mx-2 mr-auto uppercase font-black inline-block text-darkBlue"
-            >
-                Professional Experience
-            </h2>
-        </div>
-        <!-- INTRO -->
-        <p class="my-6 text-justify">I've been an academician and a researcher, worked in mechanical
-            engineering operations and maintenance, led a software development
-            team at an IT services industry and now work as an independent consultants
-            developer and product manager. Some of my earlier engagements
-            include:
-        </p>
-        <!-- LIST OF ENGAGEMENTS -->
-        <div class="flex flex-wrap m-2 p-2">
-            <!-- IT -->
-            <div
-                    class="max-w-sm inline-block border-greenBlue border-dashed border-2 p-2 my-2 shadow-lg mx-auto"
-            >
-                <ul class="ml-5 mr-2 text-greenBlue">
-                    <p class="text-center font-bold">Services (IT Services and SaaS)</p>
-                    <li class="border-greenBlue font-bold border-2 m-2 p-2 inline-block">
-                        Aurafox Solutions Pvt. Ltd. <br/>(Brands: Commutec, FleetOZ)
-                    </li>
-                    <li class="border-greenBlue font-bold border-2 m-2 p-2 inline-block">
-                        WhileOne Techsoft Pvt. Ltd.
-                    </li>
-                    <li class="border-greenBlue font-bold border-2 m-2 p-2 inline-block">
-                        Full-stack Interactive LLP
-                    </li>
-                    <li class="border-greenBlue font-bold border-2 m-2 p-2 inline-block">
-                        Altruist Global Holdings Pvt. Ltd.
-                    </li>
-                    <li class="border-greenBlue font-bold border-2 m-2 p-2 inline-block text-justify">
-                        Intellection Software and Technologies Pvt. Ltd. - with clients like
-                        <ul class="list-disc pl-4">
-                            <li>Broadcast Audience Research Council, Mumbai, India</li>
-                            <li>Equinox Software and Services, Pune, India</li>
-                            <li>Fluent Hydrosystems, Pune, India</li>
-                            <li>ISME Bangalore, India</li>
-                            <li>AdirA, PA, US</li>
-                            <li>eMembler, Texas, US</li>
-                        </ul>
-                    </li>
-                </ul>
+          <div id="skills" class="skills-panel" aria-labelledby="skills-title">
+            <div class="skills-panel__heading">
+              <div>
+                <p class="eyebrow">Skills / searchable inventory</p>
+                <h3 id="skills-title">Tools change. Range compounds.</h3>
+              </div>
+              <p><span data-skills-count></span> technologies, practices, and working domains used across real engagements.</p>
             </div>
-            <!-- RESEARCH AND ACADEMIA -->
-            <div
-                    class="max-w-sm inline-block border-greenBlue border-dashed border-2 p-2 my-2 shadow-lg mx-auto"
-            >
-                <ul class="ml-5 mr-2 text-greenBlue">
-                    <p class="text-center font-bold">Research and Academia</p>
-                    <li class="border-greenBlue font-bold border-2 m-2 p-2 inline-block">
-                        IIT Madras
-                    </li>
-                    <li class="border-greenBlue font-bold border-2 m-2 p-2 inline-block">
-                        Center for Industrial Consultancy and Sponsored Research (ICSR) -
-                        IIT Madras, with the client NLC India Limited (A Navratna company)
-                    </li>
-                    <li class="border-greenBlue font-bold border-2 m-2 p-2 inline-block">
-                        Dr. Babasaheb Ambedkar Technological University, Lonere
-                    </li>
-                    <li class="border-greenBlue font-bold border-2 m-2 p-2 inline-block">
-                        CSMSS Chh. Shahu College of Engineering, Aurangabad
-                    </li>
-                </ul>
-            </div>
-            <!-- MANUFACTURING -->
-            <div
-                    class="max-w-sm inline-block border-greenBlue border-dashed border-2 p-2 my-2 shadow-lg mx-auto"
-            >
-                <ul class="ml-5 mr-2 text-greenBlue">
-                    <p class="text-center font-bold">Manufacturing</p>
-                    <li class="border-greenBlue font-bold border-2 m-2 p-2 inline-block">
-                        JSW Steel Ltd.
-                    </li>
-                    <li class="border-greenBlue font-bold border-2 m-2 p-2 inline-block">
-                        Sudarshan Chemical Industries Ltd.
-                    </li>
-                    <li class="border-greenBlue font-bold border-2 m-2 p-2 inline-block">
-                        Virama Laminates Pvt. Ltd.
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+            <ul class="skills-cloud" aria-label="Technical and leadership skills" data-skills-cloud></ul>
+          </div>
 
-<!--  -->
-<!--  -->
-<!--  -->
-<!--  -->
-<!-- SPIRITUAL JOURNEY _____________________________________________________________________________-->
-<div id="spritual_journey" class="my-10 px-2 py-10 md:px-48">
-    <div class="max-w-4xl mx-auto">
-        <!-- HEADER -->
-        <div class="flex text-center items-center">
-            <i class="ml-auto fas fa-peace fa-4x inline-block text-darkBlue"></i>
-            &nbsp;&nbsp;&nbsp;
-            <h2
-                    class="mx-2 mr-auto uppercase font-black inline-block text-darkBlue"
-            >
-                Spiritual Journey
-            </h2>
-        </div>
-        <!-- INTRO -->
-        <p class="mt-6 text-justify">
-            Always wanting to know more, the question,
-            <strong>"WHY DO WE LIVE?"</strong> has definitely bothered several
-            people. To explore answers to the same, I did numerous things like:
-        </p>
-        <!-- LIST OF RELATED ACTIVITIES -->
-        <div class="">
-            <ul class="list-disc ml-5 mr-2">
-                <li>
-                    I've read books like:
-                    <ul class="list-disc ml-5 mr-2">
-                        <li>Man's search for meaning by Viktor Frankl</li>
-                        <li>Many lives, many masters by Brian Weiss</li>
-                        <li>Only love is real by Brian Weiss</li>
-                        <li>Messages from the masters by Brian Weiss</li>
-                        <li>
-                            Jonathan Livingston Seagull written by Richard Bach and
-                            illustrated by Russell Munson
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    I took the "Happiness Program" by
-                    <strong>the Art of Living</strong>
-                </li>
-                <li>Also did the 10-Day <strong>Vipassana course</strong></li>
-                <li>Did <strong>Yoga</strong> for about 4 months in life (hoping for spiritual progress)</li>
-                <li>And did a lot of other activities!</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<!--  -->
-<!--  -->
-<!--  -->
-<!--  -->
-<!-- HONORS AND ACHIEVEMENTS _____________________________________________________________________________-->
-<div id="honors_achievements" class="bg-green-50 my-10 px-2 py-10 md:px-48">
-    <div class="max-w-4xl mx-auto">
-        <!-- HEADER -->
-        <div class="flex text-center items-center">
-            <i class="ml-auto fas fa-trophy fa-4x inline-block text-darkBlue"></i>
-            &nbsp;&nbsp;&nbsp;
-            <h2
-                    class="mx-2 mr-auto uppercase font-black inline-block text-darkBlue"
-            >
-                Honors, Achievements and Social Contributions
-            </h2>
-        </div>
-        <!-- INTRO -->
-        <p class="mt-6 text-justify">
-            Being curious and constantly challenging myself to do better than I
-            did earlier, on my path, I made some small achievements. Some of these
-            are,
-        </p>
-        <!-- LIST OF RELATED ACTIVITIES -->
-        <ul class="list-disc ml-5 mr-2 text-justify">
-            <li>
-                Volunteering and societal contributions:
-                <ul class="list-disc ml-5 mr-2">
-                    <li>
-                        Currently,
-                        <strong>Technical Advisor for Vishanema Dnyati Mandal</strong> - a conglomerate of 3 trusts
-                        representing a minority community - Vishanema, which has world population of about 10k!
-                    </li>
-                    <li>
-                        Served as the
-                        <strong>President of ISHRAE Student Chapter</strong> - a reputed
-                        professional body!
-                    </li>
-                    <li>
-                        Volunteered for
-                        <strong>managing multiple University events</strong>!
-                    </li>
-                </ul>
-            </li>
-            <li>
-                Research: You can view
-                <a
-                        href="https://scholar.google.com/citations?user=sU6SKysAAAAJ&hl=en&oi=ao"
-                        target="_blank"
-                        class="underline text-blue-500"
-                >my Google Scholar profile by clicking here</a
-                >. What I've achieved so far:
-                <ul class="list-disc ml-5 mr-2">
-                    <li>
-                        A recognized
-                        <strong
-                        >reviewer for the International Journal of Refrigeration,
-                            Elsevier</strong
-                        >
-                    </li>
-                    <li>
-                        <strong
-                        >Published two journal papers - one in the International Journal of Low-Carbon
-                            Technologies, Oxford University Press, and other in the International Journal of Green
-                            Energy, Taylor & Francis</strong
-                        >
-                    </li>
-                    <li>
-                        <strong
-                        >Presented my research work at the 12<sup>th</sup> IIR Natural
-                            Working Fluids Conference</strong
-                        >
-                    </li>
-                </ul>
-            </li>
-            <li>
-                Academics:
-                <ul class="list-disc ml-5 mr-2">
-                    <li>M.Tech <strong>University Gold Medallist</strong>!</li>
-                    <li>
-                        Qualified Graduate Aptitude Test in Engineering
-                        (<strong>GATE</strong>) thrice!
-                    </li>
-                </ul>
-            </li>
-            <li>
-                Sports and cultural activities:
-                <ul class="list-disc ml-5 mr-2">
-                    <li>
-                        Won University level <strong>basketball</strong> championship
-                    </li>
-                    <li>Bagged <strong>prize in acting</strong></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</div>
-
-<!--  -->
-<!--  -->
-<!--  -->
-<!--  -->
-<!-- EDUCATION _____________________________________________________________________________-->
-<div id="education" class="my-10 px-2 py-10 md:px-48">
-    <div class="max-w-4xl mx-auto">
-        <!-- HEADER -->
-        <div class="flex text-center items-center">
-            <i
-                    class="ml-auto fas fa-user-graduate fa-4x inline-block text-darkBlue"
-            ></i>
-            &nbsp;&nbsp;&nbsp;
-            <h2
-                    class="mx-2 mr-auto uppercase font-black inline-block text-darkBlue"
-            >
-                Education
-            </h2>
-        </div>
-        <!-- INTRO -->
-        <p class="mt-6 text-justify">
-            Education has been a key part of my life. I've always tried to fit
-            maximum learning in the available time. I've done numerous courses and
-            scored good marks throughout the career. These include:
-        </p>
-        <!-- LIST OF RELATED ACTIVITIES -->
-        <div class="flex flex-wrap m-2 p-2">
-            <div
-                    class="max-w-sm inline-block border-darkBlue text-darkBlue border-2 p-2 my-2 shadow-lg mx-auto"
-            >
-                <p class="text-center text-black">Formal Education</p>
-                <hr class="border-black"/>
-                <ul class="list-disc pl-3">
-                    <li>IIT Madras Ph.D. dropout</li>
-                    <li>
-                        M.Tech University Gold Medallist
-                    </li>
-                    <li>Distinction in B.Tech Mechanical Engineering</li>
-                    <li>
-                        97% in Physics, 97% in Maths and aggregate 84.67% in std. XII
-                    </li>
-                    <li>
-                        98% in Maths and 93% in Science and aggregate 82.30% in std. X
-                    </li>
-                </ul>
+          <aside class="conversion-panel" aria-labelledby="conversion-title">
+            <div>
+              <p class="eyebrow">A useful fit</p>
+              <h3 id="conversion-title">Need someone who can move between product, code, and delivery?</h3>
             </div>
-            <div
-                    class="max-w-sm inline-block border-darkBlue text-darkBlue border-2 p-2 my-2 shadow-lg mx-auto"
-            >
-                <p class="text-center text-black">
-                    Online Certifications and Courses
-                </p>
-                <hr class="border-black"/>
-                <ul class="list-disc pl-3">
-                    <li>LinkedIn assessments: HTML, CSS, JS, ReactJS</li>
-                    <li>Udemy courses: MERN Stack, Python, MongoDB, Google Dialogflow, SDLC</li>
-                    <li>LinkedIn and Udemy courses: Scrum, Agile</li>
-                    <li>LinkedIn courses: Jira, AWS Amplify, Nginx, NodeJS, TypeScript, Webpack, Software Architecture
-                        Patters
-                    </li>
-                    <li>Research Methodology</li>
-                </ul>
+            <div>
+              <p>Bring me in for fractional technology leadership, a product build, or a complicated delivery problem that needs clear ownership.</p>
+              <a class="button button--primary" href="mailto:sshet24@gmail.com">
+                Tell me what is stuck <span aria-hidden="true">↗</span>
+              </a>
             </div>
+          </aside>
         </div>
-    </div>
-</div>
+      </section>
 
-<!--  -->
-<!--  -->
-<!--  -->
-<!--  -->
-<!-- GET IN TOUCH _____________________________________________________________________________-->
-<div id="get-in-touch">
-    <div class="bg-green-50 flex items-center text-darkBlue mx-2">
-        <div class="ml-auto mr-2">
-            <i class="fas fa-address-book fa-8x"></i>
+      <section id="work" class="section-shell section-block" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">03 / Work files</p>
+            <h2 id="work-title">A searchable record of things built, led, and untangled.</h2>
+          </div>
+          <p>
+            The archive brings together product delivery, technical consulting, program leadership, and
+            industrially grounded software work. Filter by the kind of problem, not just the job title.
+          </p>
         </div>
-        <div class="mr-auto ml-2">
-            <h1>Get In Touch</h1>
-            <p class="font-extrabold">
-                E-Mail: <a href="mailto:sshet24@gmail.com">sshet24@gmail.com</a><br/>
-                Mobile: <a href="tel:+917588106345">(+91)7588106345</a>, <a href="tel:+918169172626">(+91)8169172626</a><br/>
+
+        <div class="work-controls" aria-label="Project filters">
+          <div class="filter-group" role="group" aria-label="Filter work files by discipline" data-project-tabs></div>
+          <label class="search-field">
+            <span class="sr-only">Search work files</span>
+            <span aria-hidden="true">⌕</span>
+            <input type="search" placeholder="Search client, stack, or problem" autocomplete="off" data-project-search />
+          </label>
+        </div>
+
+        <div class="archive-status">
+          <span data-result-count aria-live="polite">28 records</span>
+          <span>Cards may appear in more than one tab</span>
+        </div>
+        <div class="project-grid" data-project-grid></div>
+        <noscript><p class="noscript-note">Enable JavaScript to browse and filter the complete work archive.</p></noscript>
+        <button class="archive-button" type="button" data-show-all>Open the full archive (28)</button>
+      </section>
+
+      <section id="timeline" class="timeline-section section-block" aria-labelledby="timeline-title">
+        <div class="section-shell">
+          <div class="section-heading section-heading--light">
+            <div>
+              <p class="eyebrow">04 / Timeline</p>
+              <h2 id="timeline-title">A career is not always a ladder.</h2>
+            </div>
+            <p>
+              Mine has moved through overlapping lanes: building software, leading technology and delivery,
+              teaching and research, and working inside mechanical industry.
             </p>
-            <a href="https://www.linkedin.com/in/shrikantshet" target="_blank"
-            ><i class="fab fa-linkedin fa-2x"></i
-            ></a>
-            <a href="https://www.facebook.com/shrikant.shet.94" target="_blank"
-            ><i class="fab fa-facebook fa-2x"></i
-            ></a>
-            <a href="https://twitter.com/shrikantshet" target="_blank"
-            ><i class="fab fa-twitter fa-2x"></i
-            ></a>
-        </div>
-    </div>
-</div>
+          </div>
 
-<!-- COPYRIGHT -->
-<div class="pt-4 mx-2 bg-green-50">&copy;<span id="copyright">
-        <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-    </span> Shrikant Shet</div>
-</body>
+          <div class="timeline-controls" role="group" aria-label="Filter career timeline" data-timeline-tabs></div>
+          <div class="timeline" data-timeline></div>
+        </div>
+      </section>
+
+      <section id="practice" class="section-shell section-block" aria-labelledby="practice-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">05 / Practice</p>
+            <h2 id="practice-title">Range, without the blur.</h2>
+          </div>
+          <p>
+            Breadth is only useful when it improves the hand-off between strategy and execution. These are the
+            three modes I move between most often.
+          </p>
+        </div>
+        <div class="practice-grid" data-practice-grid></div>
+      </section>
+
+      <section id="foundations" class="research-section section-block" aria-labelledby="research-title">
+        <div class="section-shell research-layout">
+          <div class="research-intro">
+            <p class="eyebrow">06 / Foundations</p>
+            <h2 id="research-title">The mechanical engineer never left the room.</h2>
+            <p>
+              Before product and software leadership came industry, academia, and research. That training still
+              shapes how I model systems, ask questions, and explain difficult ideas.
+            </p>
+            <a class="text-link" href="https://scholar.google.com/citations?user=sU6SKysAAAAJ" target="_blank" rel="noreferrer">
+              View Google Scholar <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="foundation-grid">
+            <article class="foundation-card reveal">
+              <span>Research</span>
+              <h3>Two journal papers</h3>
+              <p>Published research in energy and low-carbon technology journals; presented at the 12th IIR Natural Working Fluids Conference.</p>
+            </article>
+            <article class="foundation-card reveal">
+              <span>Academia</span>
+              <h3>Teacher and researcher</h3>
+              <p>Teaching roles at DBATU and Chh. Shahu College of Engineering, plus research and sponsored project work at IIT Madras.</p>
+            </article>
+            <article class="foundation-card reveal">
+              <span>Industry</span>
+              <h3>Mechanical beginnings</h3>
+              <p>Graduate Engineer Trainee experience at JSW Steel and Sudarshan Chemical Industries, supported by research in refrigeration and low-carbon thermal systems.</p>
+            </article>
+            <article class="foundation-card foundation-card--accent reveal">
+              <span>Education</span>
+              <h3>M.Tech University Gold Medallist</h3>
+              <p>A mechanical-engineering foundation, three GATE qualifications, and a habit of learning across domains.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="community" class="community-section section-block" aria-labelledby="community-title">
+        <div class="section-shell">
+          <div class="section-heading section-heading--community">
+            <div>
+              <p class="eyebrow">07 / Community timeline</p>
+              <h2 id="community-title">Work beyond the job title.</h2>
+            </div>
+            <p>Advisory, service, and community roles—ongoing or bounded by clear start and end dates.</p>
+          </div>
+          <div class="community-grid" data-community-grid></div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section section-shell" aria-labelledby="contact-title">
+        <p class="eyebrow">08 / Start a conversation</p>
+        <div class="contact-layout">
+          <div>
+            <h2 id="contact-title">Need a technical owner, not another hand-off?</h2>
+            <p>Tell me what you are building—or what is stuck.</p>
+            <ul class="contact-fit" aria-label="Typical engagements">
+              <li>Fractional CTO and technology advisory</li>
+              <li>Full-stack product engineering</li>
+              <li>Architecture, modernization, and delivery rescue</li>
+            </ul>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:sshet24@gmail.com">
+              Start with email <span>sshet24@gmail.com</span><i aria-hidden="true">↗</i>
+            </a>
+            <a href="https://www.linkedin.com/in/shrikantshet/" target="_blank" rel="noreferrer">
+              LinkedIn <span>/in/shrikantshet</span><i aria-hidden="true">↗</i>
+            </a>
+            <a href="./Shrikant%20Shet_FullStack_Resume.pdf" target="_blank" rel="noreferrer">
+              Résumé <span>PDF · Full-stack</span><i aria-hidden="true">↗</i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span data-current-year>2026</span> Shrikant Shet</p>
+      <p>Fractional CTO · AI-equipped software engineer.</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+
+    <div class="contact-dock" aria-label="Quick contact options" data-contact-dock></div>
+
+    <script type="module" src="./js/site.js"></script>
+  </body>
 </html>

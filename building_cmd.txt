@@ -1,6 +1,0 @@
-Building for development
-npx tailwindcss build ./css/styles.css -o ./css/dist.css
-
-
-Building for production
-NODE_ENV=production npx tailwindcss-cli@latest build -i ./css/styles.css -o ./css/prod.css

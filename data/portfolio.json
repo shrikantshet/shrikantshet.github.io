@@ -1,0 +1,1043 @@
+{
+  "editingGuide": {
+    "cardTabMembership": "Each card has a tabs array. Add multiple tab IDs to show the same card in multiple tabs.",
+    "workTimelineRelationships": "Each timeline or community engagement has a unique id. Add one or more of those IDs to a work file's engagementIds array to associate it with multiple engagements.",
+    "communityDates": "Use YYYY-MM in startDate and endDate. Leave endDate empty for an ongoing role. A periodLabel such as Ongoing overrides the calculated date range.",
+    "relationshipExample": {
+      "engagementIds": [
+        "engagement-id-one",
+        "engagement-id-two"
+      ]
+    },
+    "availableProjectTabIds": [
+      "software",
+      "leadership",
+      "engineering"
+    ],
+    "availableTimelineTabIds": [
+      "leadership",
+      "technology",
+      "research",
+      "mechanical"
+    ]
+  },
+  "contact": {
+    "email": "sshet24@gmail.com",
+    "phoneDisplay": "+91 75881 06345",
+    "phoneHref": "+917588106345",
+    "whatsappNumber": "917588106345",
+    "whatsappMessage": "Hi Shrikant, I'd like to discuss a project with you."
+  },
+  "projectTabs": [
+    {
+      "id": "all",
+      "label": "All files"
+    },
+    {
+      "id": "software",
+      "label": "Software & product"
+    },
+    {
+      "id": "leadership",
+      "label": "Leadership"
+    },
+    {
+      "id": "engineering",
+      "label": "Engineering crossover"
+    }
+  ],
+  "timelineTabs": [
+    {
+      "id": "all",
+      "label": "All tracks"
+    },
+    {
+      "id": "leadership",
+      "label": "Leadership",
+      "color": "leadership"
+    },
+    {
+      "id": "technology",
+      "label": "Technology",
+      "color": "technology"
+    },
+    {
+      "id": "research",
+      "label": "Research & teaching",
+      "color": "research"
+    },
+    {
+      "id": "mechanical",
+      "label": "Mechanical industry",
+      "color": "mechanical"
+    }
+  ],
+  "philosophy": [
+    {
+      "number": "01",
+      "title": "End-to-end means end-to-end.",
+      "description": "I take pride in staying with the work from requirement gathering and scoping through development, deployment, maintenance, and the next round of learning."
+    },
+    {
+      "number": "02",
+      "title": "Ownership over hand-offs.",
+      "description": "I do my best work with clear accountability for outcomes—taking initiative, making decisions visible, and acting as an owner rather than an anonymous subcontracted resource."
+    }
+  ],
+  "aiPractice": {
+    "title": "AI-equipped before it was a checkbox.",
+    "description": "I have treated AI as part of the engineering workflow since GitHub Copilot's technical preview, evolving through Supermaven and Cursor to Claude Code and Codex. The point is not novelty; it is faster feedback, broader context, and more time for product and engineering decisions.",
+    "journey": [
+      {
+        "number": "01",
+        "tool": "GitHub Copilot",
+        "phase": "Technical preview",
+        "description": "Started using AI-assisted development during the original technical preview."
+      },
+      {
+        "number": "02",
+        "tool": "Supermaven",
+        "phase": "Fast completion",
+        "description": "Adopted faster, context-aware completion for day-to-day implementation."
+      },
+      {
+        "number": "03",
+        "tool": "Cursor",
+        "phase": "AI-native editor",
+        "description": "Moved to codebase-aware conversations and changes inside the editor."
+      },
+      {
+        "number": "04",
+        "tool": "Claude Code",
+        "phase": "Agentic workflows",
+        "description": "Expanded into terminal-based planning, implementation, and review workflows."
+      },
+      {
+        "number": "05",
+        "tool": "Codex",
+        "phase": "Repository agents",
+        "description": "Use repository-level agents to implement, validate, and document complete changes."
+      }
+    ]
+  },
+  "skills": [
+    "AI-assisted software engineering",
+    "GitHub Copilot",
+    "Supermaven",
+    "Cursor",
+    "Claude Code",
+    "Codex",
+    "React",
+    "Next.js",
+    "Vue.js",
+    "React Native",
+    "Node.js",
+    "TypeScript",
+    "JavaScript",
+    "Python",
+    "Laravel",
+    "AdonisJS",
+    "tRPC",
+    "GraphQL",
+    "REST APIs",
+    "PostgreSQL",
+    "MySQL",
+    "SQL Server",
+    "MongoDB",
+    "Redis",
+    "AWS",
+    "Git",
+    "GitHub",
+    "GitLab",
+    "Bitbucket",
+    "Jira",
+    "ClickUp",
+    "Odoo",
+    "Progressive Web Apps",
+    "Electron",
+    "Raspberry Pi",
+    "Arduino",
+    "Wireframing",
+    "Rapid prototyping",
+    "System design",
+    "Software architecture",
+    "Product management",
+    "Project management",
+    "Fractional CTO",
+    "Technology strategy",
+    "Requirements gathering",
+    "Stakeholder management",
+    "Team leadership",
+    "Agile",
+    "Scrum",
+    "Technical consulting",
+    "Deployment and maintenance",
+    "Industrial IoT",
+    "Data visualization",
+    "Mathematical simulation",
+    "Mechanical engineering"
+  ],
+  "skillEmphasis": {
+    "highlight": [
+      "AI-assisted software engineering",
+      "Claude Code",
+      "Codex",
+      "React Native",
+      "GraphQL",
+      "MongoDB",
+      "Odoo",
+      "System design",
+      "Technology strategy",
+      "Scrum",
+      "Mathematical simulation"
+    ],
+    "border": [
+      "GitHub Copilot",
+      "Cursor",
+      "Vue.js",
+      "PostgreSQL",
+      "Software architecture",
+      "Team leadership",
+      "Mathematical simulation"
+    ]
+  },
+  "communityEngagements": [
+    {
+      "id": "vishanema-technical-advisor",
+      "organization": "Vishanema Dnyati Mandal",
+      "role": "Technical Advisor (IT)",
+      "description": "Providing commercial and development advisory for digitization and community-building initiatives serving a Gujarati community of about 10,000 people.",
+      "startDate": "2020-10",
+      "endDate": null,
+      "periodLabel": null,
+      "url": "https://vishanema.org/"
+    },
+    {
+      "id": "ishrae-associate-member",
+      "organization": "Indian Society of Heating, Refrigerating and Airconditioning Engineers (ISHRAE)",
+      "role": "Associate Member",
+      "description": "Professional membership in heating, refrigeration, and air-conditioning engineering.",
+      "startDate": "2014-02",
+      "endDate": "2020-01",
+      "periodLabel": null
+    },
+    {
+      "id": "institute-refrigeration-associate-member",
+      "organization": "Institute of Refrigeration",
+      "role": "Associate Member",
+      "description": "Professional membership focused on refrigeration engineering and its applications.",
+      "startDate": "2016-11",
+      "endDate": "2018-08",
+      "periodLabel": null
+    },
+    {
+      "id": "engineering-software-awareness",
+      "organization": "Independent initiative",
+      "role": "Engineering Software Awareness",
+      "description": "Wrote code and educational material to encourage software adoption, parametric studies, and faster calculation in mechanical engineering.",
+      "startDate": "2015-10",
+      "endDate": "2016-07",
+      "periodLabel": null,
+      "url": "https://engineeringequationsolver.blogspot.com/"
+    },
+    {
+      "id": "dbatu-ishrae-student-president",
+      "organization": "Dr. Babasaheb Ambedkar Technological University, Lonere",
+      "role": "President, ISHRAE Student Chapter",
+      "description": "Led the university's student chapter of the Indian Society of Heating, Refrigerating and Airconditioning Engineers.",
+      "startDate": "2012-05",
+      "endDate": "2013-05",
+      "periodLabel": null
+    },
+    {
+      "id": "annual-social-gathering-coordinator",
+      "organization": "Dr. Babasaheb Ambedkar Technological University, Lonere",
+      "role": "Annual Social Gathering Coordinator",
+      "description": "Coordinated activities for the university's annual social gathering.",
+      "startDate": "2012-01",
+      "endDate": "2012-05",
+      "periodLabel": null
+    },
+    {
+      "id": "mechanical-students-association-coordinator",
+      "organization": "Dr. Babasaheb Ambedkar Technological University, Lonere",
+      "role": "Mechanical Engineering Students' Association Coordinator",
+      "description": "Coordinated university-level activities for mechanical engineering students.",
+      "startDate": "2009-09",
+      "endDate": "2010-05",
+      "periodLabel": null
+    }
+  ],
+  "experiences": [
+    {
+      "id": "joule-fractional-cto",
+      "period": "May 2026 — Present",
+      "organization": "Joule Consulting Pvt. Ltd.",
+      "detail": "Callify",
+      "role": "Fractional CTO",
+      "tags": [
+        "Technology leadership",
+        "Product"
+      ],
+      "parallel": true,
+      "tabs": [
+        "leadership",
+        "technology"
+      ]
+    },
+    {
+      "id": "rance-consultant",
+      "period": "Nov 2025 — Present",
+      "organization": "Rance Computer Pvt. Ltd.",
+      "detail": "RanceLab",
+      "role": "Consultant",
+      "tags": [
+        "Consulting",
+        "Product"
+      ],
+      "parallel": true,
+      "tabs": [
+        "leadership",
+        "technology"
+      ]
+    },
+    {
+      "id": "hirlekar-executive-assistant",
+      "period": "Jun 2025 — Nov 2025",
+      "organization": "Hirlekar Precision",
+      "detail": "",
+      "role": "Executive Assistant",
+      "tags": [
+        "Management",
+        "Operations"
+      ],
+      "tabs": [
+        "leadership"
+      ]
+    },
+    {
+      "id": "zataakse-cto",
+      "period": "Dec 2024 — Mar 2025",
+      "organization": "Zataakse Technology Solutions Pvt. Ltd.",
+      "detail": "",
+      "role": "Chief Technology Officer",
+      "tags": [
+        "Technology leadership"
+      ],
+      "tabs": [
+        "leadership",
+        "technology"
+      ]
+    },
+    {
+      "id": "independent-2024",
+      "period": "2024",
+      "organization": "Independent practice",
+      "detail": "",
+      "role": "Freelance Software Developer",
+      "tags": [
+        "Software development"
+      ],
+      "tabs": [
+        "technology"
+      ]
+    },
+    {
+      "id": "aurafox-cto",
+      "period": "Dec 2023 — Aug 2024",
+      "organization": "Aurafox Solutions Pvt. Ltd.",
+      "detail": "Commutec · FleetOZ",
+      "role": "Chief Technology Officer",
+      "tags": [
+        "Product",
+        "Technology leadership"
+      ],
+      "tabs": [
+        "leadership",
+        "technology"
+      ]
+    },
+    {
+      "id": "fullstack-interactive-developer",
+      "period": "Jan 2022 — Nov 2023",
+      "organization": "Full-stack Interactive LLP",
+      "detail": "",
+      "role": "Full-stack Developer",
+      "tags": [
+        "Software development"
+      ],
+      "tabs": [
+        "technology"
+      ]
+    },
+    {
+      "id": "independent-2021",
+      "period": "Jan 2021 — Dec 2021",
+      "organization": "Independent practice",
+      "detail": "",
+      "role": "Freelance Software Developer",
+      "tags": [
+        "Software development"
+      ],
+      "tabs": [
+        "technology"
+      ]
+    },
+    {
+      "id": "intellection-project-manager",
+      "period": "Jan 2019 — Jan 2021",
+      "organization": "Intellection Software and Technologies Pvt. Ltd.",
+      "detail": "",
+      "role": "Project Manager",
+      "tags": [
+        "Project management",
+        "Software delivery"
+      ],
+      "tabs": [
+        "leadership",
+        "technology"
+      ]
+    },
+    {
+      "id": "dbatu-assistant-professor",
+      "period": "Jul 2018 — Dec 2018",
+      "organization": "Dr. Babasaheb Ambedkar Technological University",
+      "detail": "Lonere",
+      "role": "Assistant Professor",
+      "tags": [
+        "Teaching"
+      ],
+      "tabs": [
+        "research"
+      ]
+    },
+    {
+      "id": "iit-madras-research-scholar",
+      "period": "Jul 2017 — Oct 2017",
+      "organization": "IIT Madras",
+      "detail": "",
+      "role": "Research Scholar",
+      "tags": [
+        "Research"
+      ],
+      "parallel": true,
+      "tabs": [
+        "research"
+      ]
+    },
+    {
+      "id": "icsr-iit-madras-project-officer",
+      "period": "May 2017 — Jul 2017",
+      "organization": "ICSR, IIT Madras",
+      "detail": "Centre for Industrial Consultancy and Sponsored Research",
+      "role": "Project Officer",
+      "tags": [
+        "Sponsored research"
+      ],
+      "parallel": true,
+      "tabs": [
+        "research",
+        "mechanical"
+      ]
+    },
+    {
+      "id": "shahu-assistant-professor",
+      "period": "Jul 2016 — Mar 2018",
+      "organization": "Chh. Shahu College of Engineering",
+      "detail": "Aurangabad",
+      "role": "Assistant Professor",
+      "tags": [
+        "Teaching"
+      ],
+      "parallel": true,
+      "tabs": [
+        "research"
+      ]
+    },
+    {
+      "id": "dbatu-teaching-assistant",
+      "period": "Aug 2014 — Jul 2016",
+      "organization": "Dr. Babasaheb Ambedkar Technological University",
+      "detail": "Lonere",
+      "role": "Teaching Assistant",
+      "tags": [
+        "Teaching"
+      ],
+      "tabs": [
+        "research"
+      ]
+    },
+    {
+      "id": "jsw-graduate-engineer",
+      "period": "Jan 2014 — Aug 2014",
+      "organization": "JSW Steel Ltd.",
+      "detail": "",
+      "role": "Graduate Engineer Trainee",
+      "tags": [
+        "Mechanical industry"
+      ],
+      "tabs": [
+        "mechanical"
+      ]
+    },
+    {
+      "id": "sudarshan-graduate-engineer",
+      "period": "Aug 2013 — Oct 2013",
+      "organization": "Sudarshan Chemical Industries Ltd.",
+      "detail": "",
+      "role": "Graduate Engineer Trainee",
+      "tags": [
+        "Mechanical industry"
+      ],
+      "tabs": [
+        "mechanical"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "callify-new-product",
+      "client": "Joule Consulting · Callify",
+      "title": "New product development",
+      "description": "Building Callify as a new product for Joule Consulting.",
+      "role": "Developer / CTO",
+      "stack": [],
+      "featured": true,
+      "engagementIds": [
+        "joule-fractional-cto"
+      ],
+      "tabs": [
+        "software",
+        "leadership"
+      ]
+    },
+    {
+      "id": "rancelabs-erp",
+      "client": "Rance Computer · RanceLab",
+      "title": "ERP product",
+      "description": "Development work on RanceLab's enterprise resource planning product.",
+      "role": "Developer",
+      "stack": [],
+      "featured": true,
+      "engagementIds": [
+        "rance-consultant"
+      ],
+      "tabs": [
+        "software",
+        "leadership"
+      ]
+    },
+    {
+      "id": "rancelabs-mobi",
+      "client": "Rance Computer · RanceLab",
+      "title": "Mobi business analytics",
+      "description": "An analytics product for business owners.",
+      "role": "",
+      "stack": [],
+      "engagementIds": [
+        "rance-consultant"
+      ],
+      "tabs": [
+        "software",
+        "leadership"
+      ]
+    },
+    {
+      "id": "rancelabs-configuration",
+      "client": "Rance Computer · RanceLab",
+      "title": "Configuration portal",
+      "description": "A configuration portal in the RanceLab product ecosystem.",
+      "role": "",
+      "stack": [],
+      "engagementIds": [
+        "rance-consultant"
+      ],
+      "tabs": [
+        "software",
+        "leadership"
+      ]
+    },
+    {
+      "id": "fleetoz-travel-platform",
+      "client": "Aurafox Solutions · Commutec",
+      "title": "FleetOZ travel management platform",
+      "description": "A product for B2B travel management, including booking and invoicing workflows.",
+      "role": "Developer / CTO",
+      "stack": [
+        "Next.js",
+        "tRPC",
+        "MySQL"
+      ],
+      "url": "https://app.fleetoz.com/",
+      "featured": true,
+      "engagementIds": [
+        "aurafox-cto"
+      ],
+      "tabs": [
+        "software",
+        "leadership"
+      ]
+    },
+    {
+      "id": "ampere-web-revamp",
+      "client": "Ampere Computing",
+      "title": "Web platform revamp",
+      "description": "Revamping web applications for a processor manufacturer, spanning corporate and customer-facing experiences.",
+      "role": "Developer / CTO",
+      "stack": [
+        "Next.js",
+        "AdonisJS",
+        "PostgreSQL"
+      ],
+      "url": "https://amperecomputing.com/",
+      "featured": true,
+      "engagementIds": [],
+      "tabs": [
+        "software",
+        "leadership"
+      ]
+    },
+    {
+      "id": "trustshare-frontends",
+      "client": "TrustCloud",
+      "title": "TrustShare frontends",
+      "description": "Building frontends for TrustCloud's TrustShare product.",
+      "role": "Developer",
+      "stack": [
+        "React"
+      ],
+      "url": "https://www.trustcloud.ai/",
+      "featured": true,
+      "engagementIds": [],
+      "tabs": [
+        "software"
+      ]
+    },
+    {
+      "id": "altruist-retail-fintech",
+      "client": "Altruist Global Holdings",
+      "title": "Fintech product for retail traders",
+      "description": "A B2C web application for backtesting trading strategies and delivering live advisory through Telegram using Kite data.",
+      "role": "Developer / CTO",
+      "stack": [
+        "Next.js",
+        "GraphQL",
+        "PostgreSQL",
+        "Redis"
+      ],
+      "featured": true,
+      "engagementIds": [],
+      "tabs": [
+        "software",
+        "leadership"
+      ]
+    },
+    {
+      "id": "altruist-broker-fintech",
+      "client": "Altruist Global Holdings",
+      "title": "Fintech product for brokers",
+      "description": "A B2B web and mobile product for brokers and financial managers serving retail investors.",
+      "role": "Developer / CTO",
+      "stack": [
+        "Vue",
+        "Laravel",
+        "PostgreSQL"
+      ],
+      "featured": true,
+      "engagementIds": [],
+      "tabs": [
+        "software",
+        "leadership"
+      ]
+    },
+    {
+      "id": "adani-chrome-consulting",
+      "client": "Center for Computational Technologies",
+      "title": "Chrome plugin technical consulting",
+      "description": "Database design, technology decisions, team guidance, and technical problem-solving for a Chrome plugin for Adani Group.",
+      "role": "Developer / CTO",
+      "stack": [],
+      "engagementIds": [],
+      "tabs": [
+        "leadership",
+        "software"
+      ]
+    },
+    {
+      "id": "hirlekar-odoo",
+      "client": "Hirlekar Precision",
+      "title": "Odoo customization",
+      "description": "Customizing Odoo for a precision-engineering business.",
+      "role": "Developer",
+      "stack": [
+        "Odoo"
+      ],
+      "engagementIds": [
+        "hirlekar-executive-assistant"
+      ],
+      "tabs": [
+        "software",
+        "engineering"
+      ]
+    },
+    {
+      "id": "cuckoo-websites",
+      "client": "Cuckoo Coding GmbH",
+      "title": "Multiple websites",
+      "description": "Development work across multiple web properties.",
+      "role": "Developer",
+      "stack": [],
+      "engagementIds": [],
+      "tabs": [
+        "software"
+      ]
+    },
+    {
+      "id": "aerem-pwa",
+      "client": "Aerem Solutions",
+      "title": "Progressive web application",
+      "description": "Building a progressive web application for Aerem.",
+      "role": "Developer",
+      "stack": [
+        "PWA"
+      ],
+      "url": "https://www.aerem.co/",
+      "engagementIds": [],
+      "tabs": [
+        "software"
+      ]
+    },
+    {
+      "id": "vishanema-community-app",
+      "client": "Vishanema Dnyati Mandal",
+      "title": "Community management application",
+      "description": "A web application for member, family, profile, role, and permission management for the Vishanema community.",
+      "role": "Developer / CTO",
+      "stack": [
+        "React",
+        "Node.js",
+        "PostgreSQL"
+      ],
+      "url": "https://vishanema.org/",
+      "engagementIds": [
+        "vishanema-technical-advisor"
+      ],
+      "tabs": [
+        "software",
+        "leadership"
+      ]
+    },
+    {
+      "id": "ajay-mehta-broker-product",
+      "client": "Ajay Mehta",
+      "title": "Custom angel sub-broker product",
+      "description": "A custom software product for an angel sub-broker.",
+      "role": "Developer / CTO",
+      "stack": [],
+      "engagementIds": [],
+      "tabs": [
+        "software",
+        "leadership"
+      ]
+    },
+    {
+      "id": "doonut-cms-frontend",
+      "client": "Karo Life · Doonut",
+      "title": "CMS-driven frontend",
+      "description": "A frontend powered by a content management system.",
+      "role": "Developer",
+      "stack": [
+        "CMS"
+      ],
+      "engagementIds": [],
+      "tabs": [
+        "software"
+      ]
+    },
+    {
+      "id": "ampere-maintenance",
+      "client": "Ampere Computing",
+      "title": "Application maintenance",
+      "description": "Maintaining a web application for Ampere Computing.",
+      "role": "Developer",
+      "stack": [],
+      "url": "https://amperecomputing.com/",
+      "engagementIds": [],
+      "tabs": [
+        "software"
+      ]
+    },
+    {
+      "id": "emembler-discovery",
+      "client": "eMembler",
+      "title": "Professional networking app discovery",
+      "description": "Requirements gathering and product design for a professional networking application.",
+      "role": "Project Manager",
+      "stack": [],
+      "engagementIds": [
+        "intellection-project-manager"
+      ],
+      "tabs": [
+        "leadership"
+      ]
+    },
+    {
+      "id": "fluent-industrial-iot",
+      "client": "Fluent Hydrosystems",
+      "title": "Industrial IoT product",
+      "description": "An IoT product for the mechanical industry using a Raspberry Pi-based system.",
+      "role": "Project Manager",
+      "stack": [
+        "Python",
+        "MongoDB",
+        "MySQL",
+        "React",
+        "Raspberry Pi"
+      ],
+      "engagementIds": [
+        "intellection-project-manager"
+      ],
+      "tabs": [
+        "leadership",
+        "engineering",
+        "software"
+      ]
+    },
+    {
+      "id": "government-petroleum-simulation",
+      "client": "Government of India research project",
+      "title": "Petroleum simulation tool",
+      "description": "A mathematical simulation tool for the petroleum industry.",
+      "role": "Project Manager",
+      "stack": [
+        "Django",
+        "ZODB",
+        "React"
+      ],
+      "engagementIds": [
+        "intellection-project-manager"
+      ],
+      "tabs": [
+        "leadership",
+        "engineering",
+        "software"
+      ]
+    },
+    {
+      "id": "get100marks-apps",
+      "client": "Get100Marks",
+      "title": "Education web and mobile apps",
+      "description": "A web application plus iOS and Android applications for an education product.",
+      "role": "Project Manager",
+      "stack": [
+        ".NET",
+        "Angular",
+        "React Native"
+      ],
+      "engagementIds": [
+        "intellection-project-manager"
+      ],
+      "tabs": [
+        "leadership",
+        "software"
+      ]
+    },
+    {
+      "id": "adira-chatbots",
+      "client": "Adira LLC",
+      "title": "AI chatbots",
+      "description": "AI-based chatbot delivery using the Orbita platform.",
+      "role": "Project Manager",
+      "stack": [
+        "Orbita"
+      ],
+      "engagementIds": [
+        "intellection-project-manager"
+      ],
+      "tabs": [
+        "leadership",
+        "software"
+      ]
+    },
+    {
+      "id": "equinox-hysys",
+      "client": "Equinox Software and Services",
+      "title": "Aspen HYSYS web application",
+      "description": "A web application with an Aspen HYSYS backend engine.",
+      "role": "Project Manager",
+      "stack": [
+        ".NET",
+        "Angular",
+        "SQL Server"
+      ],
+      "engagementIds": [
+        "intellection-project-manager"
+      ],
+      "tabs": [
+        "leadership",
+        "engineering",
+        "software"
+      ]
+    },
+    {
+      "id": "barc-high-volume-poc",
+      "client": "BARC India",
+      "title": "High-volume mathematical computation POC",
+      "description": "A proof of concept for probability and statistics calculations across several gigabytes of data in seconds.",
+      "role": "Project Manager",
+      "stack": [
+        "Python",
+        "Electron",
+        "Apache Drill"
+      ],
+      "engagementIds": [
+        "intellection-project-manager"
+      ],
+      "tabs": [
+        "leadership",
+        "software"
+      ]
+    },
+    {
+      "id": "barc-statistics-poc",
+      "client": "BARC India",
+      "title": "Probability and statistics POC",
+      "description": "A mathematical proof of concept involving probability and statistics.",
+      "role": "Project Manager",
+      "stack": [
+        ".NET",
+        "Angular"
+      ],
+      "engagementIds": [
+        "intellection-project-manager"
+      ],
+      "tabs": [
+        "leadership",
+        "software"
+      ]
+    },
+    {
+      "id": "barc-mapping",
+      "client": "BARC India",
+      "title": "Real-time mapping application",
+      "description": "A mobile data-visualization application for clustering and overlaying real-time data on maps.",
+      "role": "Project Manager",
+      "stack": [
+        ".NET",
+        "Angular",
+        "React Native",
+        "SQL Server"
+      ],
+      "engagementIds": [
+        "intellection-project-manager"
+      ],
+      "tabs": [
+        "leadership",
+        "software"
+      ]
+    },
+    {
+      "id": "barc-fraud-detection",
+      "client": "BARC India",
+      "title": "Fraud detection algorithms",
+      "description": "Development work around fraud-detection algorithms and dataframes.",
+      "role": "Project Manager",
+      "stack": [
+        "Python",
+        "MongoDB"
+      ],
+      "engagementIds": [
+        "intellection-project-manager"
+      ],
+      "tabs": [
+        "leadership",
+        "software"
+      ]
+    },
+    {
+      "id": "barc-ticketing",
+      "client": "BARC India",
+      "title": "Workflow ticketing system",
+      "description": "A custom ticketing system with a complex workflow and integrations.",
+      "role": "Project Manager",
+      "stack": [
+        ".NET",
+        "Angular",
+        "SQL Server"
+      ],
+      "engagementIds": [
+        "intellection-project-manager"
+      ],
+      "tabs": [
+        "leadership",
+        "software"
+      ]
+    }
+  ],
+  "practiceAreas": [
+    {
+      "number": "01",
+      "title": "Build",
+      "subtitle": "From interface to infrastructure",
+      "description": "Hands-on product development across web, mobile, APIs, data, integrations, and cloud deployment.",
+      "skills": [
+        "React",
+        "Next.js",
+        "Vue",
+        "Node.js",
+        "TypeScript",
+        "GraphQL",
+        "PostgreSQL",
+        "Redis",
+        "AWS"
+      ]
+    },
+    {
+      "number": "02",
+      "title": "Lead",
+      "subtitle": "From requirement to release",
+      "description": "Technology direction, product discovery, team formation, stakeholder translation, prioritization, and delivery.",
+      "skills": [
+        "Fractional CTO",
+        "Product management",
+        "Project management",
+        "Agile",
+        "Scrum",
+        "Architecture",
+        "Consulting"
+      ]
+    },
+    {
+      "number": "03",
+      "title": "Engineer",
+      "subtitle": "Systems thinking beyond software",
+      "description": "A mechanical-engineering and research foundation applied to industrial, simulation, IoT, and data-heavy products.",
+      "skills": [
+        "Mechanical engineering",
+        "Industrial systems",
+        "Research",
+        "Teaching",
+        "Simulation",
+        "IoT",
+        "Statistics"
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Technically sound and willing to go beyond the expected.",
+      "person": "Rajeev Gadgil",
+      "context": "Founder & Director, WhileOne Techsoft"
+    },
+    {
+      "quote": "A quick learner, proactive collaborator, and strong front-end practitioner.",
+      "person": "Sameer Natu",
+      "context": "Founder & Director, WhileOne Techsoft"
+    },
+    {
+      "quote": "Strong at translating business requirements into product and technical direction.",
+      "person": "Nitin Garg",
+      "context": "Director, NVT Group"
+    }
+  ]
+}
