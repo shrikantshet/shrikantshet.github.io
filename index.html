@@ -49,7 +49,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Instrument+Sans:wdth,wght@75..100,400..700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css?v=20260723-type-balance-3" />
     <title>Shrikant Shet | Fractional CTO &amp; AI-Equipped Software Engineer</title>
     <script type="application/ld+json">
       {
@@ -200,21 +200,23 @@
         </div>
       </section>
 
-      <section class="manifesto" aria-label="Professional point of view">
-        <p class="manifesto__index">Point of view</p>
-        <p>
-          Hire me when the useful work lives <em>between disciplines</em>—where a business question becomes a product,
-          a product becomes a system, and somebody must own the result after release.
-        </p>
-      </section>
+      <section class="principles-fold" aria-label="Point of view and working philosophy">
+        <div class="manifesto">
+          <p class="manifesto__index">Point of view</p>
+          <p>
+            Hire me when the useful work lives <em>between disciplines</em>—where a business question becomes a product,
+            a product becomes a system, and somebody must own the result after release.
+          </p>
+        </div>
 
-      <section class="philosophy-band" aria-labelledby="philosophy-title">
-        <div class="section-shell">
-          <div class="philosophy-band__heading">
-            <p class="eyebrow">Working philosophy</p>
-            <h2 id="philosophy-title">Own the outcome, not only the task.</h2>
+        <div class="philosophy-band" aria-labelledby="philosophy-title">
+          <div class="section-shell">
+            <div class="philosophy-band__heading">
+              <p class="eyebrow">Working philosophy</p>
+              <h2 id="philosophy-title">Own the outcome, not only the task.</h2>
+            </div>
+            <div class="philosophy-grid" data-philosophy-grid></div>
           </div>
-          <div class="philosophy-grid" data-philosophy-grid></div>
         </div>
       </section>
 
@@ -410,8 +412,12 @@
       <a href="#top">Back to top ↑</a>
     </footer>
 
+    <dialog id="work-file-dialog" class="project-modal" aria-labelledby="project-dialog-title" data-project-dialog>
+      <article class="project-modal__surface" data-project-dialog-content></article>
+    </dialog>
+
     <div class="contact-dock" aria-label="Quick contact options" data-contact-dock></div>
 
-    <script type="module" src="./js/site.js"></script>
+    <script type="module" src="./js/site.js?v=20260723-compact"></script>
   </body>
 </html>
