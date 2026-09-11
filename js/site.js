@@ -37,7 +37,9 @@ systemTheme.addEventListener("change", (event) => {
   if (!readStoredTheme()) applyTheme(event.matches ? "dark" : "light");
 });
 
-const response = await fetch(new URL("../data/portfolio.json", import.meta.url));
+const response = await fetch(new URL("../data/portfolio.json", import.meta.url), {
+  cache: "no-cache",
+});
 if (!response.ok) throw new Error(`Unable to load portfolio data (${response.status})`);
 
 const {
@@ -73,10 +75,13 @@ const communityGrid = document.querySelector("[data-community-grid]");
 const practiceGrid = document.querySelector("[data-practice-grid]");
 const testimonialGrid = document.querySelector("[data-testimonial-grid]");
 const contactDock = document.querySelector("[data-contact-dock]");
+const projectDialog = document.querySelector("[data-project-dialog]");
+const projectDialogContent = document.querySelector("[data-project-dialog-content]");
 
 let activeProjectFilter = projectTabs[0].id;
 let activeTimelineFilter = timelineTabs[0].id;
 let showAllProjects = false;
+let projectDialogTrigger = null;
 
 const escapeHTML = (value = "") =>
   String(value).replace(
@@ -99,8 +104,12 @@ const makeEngagementLink = (engagement) => `
   </a>`;
 
 const makeProjectLink = (project) => `
-  <a class="relationship-link" href="#work-${escapeHTML(project.id)}"
-    data-project-link="${escapeHTML(project.id)}">${escapeHTML(project.title)}</a>`;
+  <button class="relationship-link relationship-link--action" type="button"
+    aria-haspopup="dialog" aria-controls="work-file-dialog"
+    data-project-modal="${escapeHTML(project.id)}">
+    <span>${escapeHTML(project.title)}</span>
+    <span class="relationship-link__hint" aria-hidden="true">View →</span>
+  </button>`;
 
 function renderRelationships(label, links) {
   if (!links.length) return "";
@@ -182,20 +191,23 @@ function renderTimeline() {
       const primaryTrack = experience.tabs[0];
       const tabLabel = experience.tabs.map((tab) => timelineLabels.get(tab) || tab).join(" · ");
       const relatedProjects = projects.filter((project) => project.engagementIds.includes(experience.id));
+      const workFileClass = relatedProjects.length ? "has-work-files" : "";
       return `
         <article id="engagement-${escapeHTML(experience.id)}" class="timeline-entry reveal" data-track="${escapeHTML(primaryTrack)}">
           <div class="timeline-entry__period">${escapeHTML(experience.period)}</div>
           <div class="timeline-entry__marker" aria-hidden="true"></div>
-          <div class="timeline-entry__card">
-            <div class="timeline-entry__topline">
-              <span class="track-label">${escapeHTML(tabLabel)}</span>
-              ${experience.parallel ? '<span class="parallel-label">parallel engagement</span>' : ""}
+          <div class="timeline-entry__card ${workFileClass}">
+            <div class="timeline-entry__main">
+              <div class="timeline-entry__topline">
+                <span class="track-label">${escapeHTML(tabLabel)}</span>
+                ${experience.parallel ? '<span class="parallel-label">parallel engagement</span>' : ""}
+              </div>
+              <h3>${escapeHTML(experience.role)}</h3>
+              <p class="timeline-entry__organization">${escapeHTML(experience.organization)}</p>
+              ${experience.detail ? `<p class="timeline-entry__detail">${escapeHTML(experience.detail)}</p>` : ""}
+              <div class="tag-list">${experience.tags.map(makeTag).join("")}</div>
             </div>
-            <h3>${escapeHTML(experience.role)}</h3>
-            <p class="timeline-entry__organization">${escapeHTML(experience.organization)}</p>
-            ${experience.detail ? `<p class="timeline-entry__detail">${escapeHTML(experience.detail)}</p>` : ""}
             ${renderRelationships("Work files", relatedProjects.map(makeProjectLink))}
-            <div class="tag-list">${experience.tags.map(makeTag).join("")}</div>
           </div>
         </article>`;
     })
@@ -224,14 +236,14 @@ function renderCommunityEngagements() {
   communityGrid.innerHTML = communityEngagements
     .map((engagement) => {
       const relatedProjects = projects.filter((project) => project.engagementIds.includes(engagement.id));
-      const title = engagement.url
+      const organization = engagement.url
         ? `<a href="${escapeHTML(engagement.url)}" target="_blank" rel="noreferrer">${escapeHTML(engagement.organization)}<span aria-hidden="true"> ↗</span></a>`
         : escapeHTML(engagement.organization);
       return `
         <article id="engagement-${escapeHTML(engagement.id)}" class="community-card reveal">
           <p class="community-card__period">${escapeHTML(getCommunityPeriod(engagement))}</p>
-          <p class="community-card__role">${escapeHTML(engagement.role)}</p>
-          <h3>${title}</h3>
+          <h3 class="community-card__role">${escapeHTML(engagement.role)}</h3>
+          <p class="community-card__organization">${organization}</p>
           <p>${escapeHTML(engagement.description)}</p>
           ${renderRelationships("Work files", relatedProjects.map(makeProjectLink))}
         </article>`;
@@ -386,7 +398,71 @@ function scrollToLinkedCard(id) {
   });
 }
 
+function closeProjectDialog() {
+  if (projectDialog.open) projectDialog.close();
+}
+
+function openProjectDialog(projectId, trigger) {
+  const project = projects.find((item) => item.id === projectId);
+  if (!project) return;
+
+  projectDialogTrigger = trigger;
+  const projectNumber = String(projects.indexOf(project) + 1).padStart(2, "0");
+  const relatedEngagements = project.engagementIds.map((id) => engagementById.get(id)).filter(Boolean);
+  const projectAction = project.url
+    ? `
+      <a class="button button--primary" href="${escapeHTML(project.url)}" target="_blank" rel="noreferrer">
+        Visit project <span aria-hidden="true">↗</span>
+      </a>`
+    : '<p class="project-modal__availability">Portfolio record · no external link</p>';
+
+  projectDialogContent.innerHTML = `
+    <button class="project-modal__close" type="button" aria-label="Close work file" data-project-modal-close>×</button>
+    <div class="project-modal__meta">
+      <span>Work file ${projectNumber}</span>
+      <span>${escapeHTML(project.role || "Engagement")}</span>
+    </div>
+    <p class="project-modal__client">${escapeHTML(project.client)}</p>
+    <h2 id="project-dialog-title">${escapeHTML(project.title)}</h2>
+    <p class="project-modal__description">${escapeHTML(project.description)}</p>
+    ${
+      relatedEngagements.length
+        ? `
+          <div class="project-modal__engagements">
+            <span>Related engagements</span>
+            <p>${relatedEngagements
+              .map((engagement) => `${escapeHTML(engagement.role)} · ${escapeHTML(engagement.organization)}`)
+              .join("<br />")}</p>
+          </div>`
+        : ""
+    }
+    ${project.stack?.length ? `<div class="tag-list">${project.stack.map(makeTag).join("")}</div>` : ""}
+    <div class="project-modal__actions">
+      ${projectAction}
+      <button class="button button--quiet" type="button" data-project-modal-close>Close</button>
+    </div>`;
+
+  if (typeof projectDialog.showModal === "function") {
+    projectDialog.showModal();
+  } else {
+    projectDialog.setAttribute("open", "");
+  }
+  document.body.classList.add("is-modal-open");
+  projectDialog.querySelector("[data-project-modal-close]").focus();
+}
+
 document.addEventListener("click", (event) => {
+  const projectModalLink = event.target.closest("[data-project-modal]");
+  if (projectModalLink) {
+    openProjectDialog(projectModalLink.dataset.projectModal, projectModalLink);
+    return;
+  }
+
+  if (event.target.closest("[data-project-modal-close]")) {
+    closeProjectDialog();
+    return;
+  }
+
   const engagementLink = event.target.closest("[data-engagement-link]");
   if (engagementLink) {
     event.preventDefault();
@@ -400,17 +476,16 @@ document.addEventListener("click", (event) => {
     return;
   }
 
-  const projectLink = event.target.closest("[data-project-link]");
-  if (projectLink) {
-    event.preventDefault();
-    const projectId = projectLink.dataset.projectLink;
-    activeProjectFilter = "all";
-    showAllProjects = true;
-    projectSearch.value = "";
-    syncFilterButtons("[data-project-filter]", "all", "projectFilter");
-    renderProjects();
-    scrollToLinkedCard(`work-${projectId}`);
-  }
+});
+
+projectDialog.addEventListener("click", (event) => {
+  if (event.target === projectDialog) closeProjectDialog();
+});
+
+projectDialog.addEventListener("close", () => {
+  document.body.classList.remove("is-modal-open");
+  projectDialogTrigger?.focus();
+  projectDialogTrigger = null;
 });
 
 projectSearch.addEventListener("input", renderProjects);
