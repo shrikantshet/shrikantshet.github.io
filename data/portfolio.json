@@ -270,13 +270,13 @@
   ],
   "experiences": [
     {
-      "id": "joule-fractional-cto",
-      "period": "May 2026 — Present",
-      "organization": "Joule Consulting Pvt. Ltd.",
-      "detail": "Callify",
-      "role": "Fractional CTO",
+      "id": "rance-consultant",
+      "period": "Nov 2025 — Present",
+      "organization": "Rance Computer Pvt. Ltd.",
+      "detail": "RanceLab",
+      "role": "Consultant",
       "tags": [
-        "Technology leadership",
+        "Consulting",
         "Product"
       ],
       "parallel": true,
@@ -286,13 +286,13 @@
       ]
     },
     {
-      "id": "rance-consultant",
-      "period": "Nov 2025 — Present",
-      "organization": "Rance Computer Pvt. Ltd.",
-      "detail": "RanceLab",
-      "role": "Consultant",
+      "id": "joule-fractional-cto",
+      "period": "May 2026 — Aug 2026",
+      "organization": "Joule Consulting Pvt. Ltd.",
+      "detail": "Callify",
+      "role": "Fractional CTO",
       "tags": [
-        "Consulting",
+        "Technology leadership",
         "Product"
       ],
       "parallel": true,
@@ -499,7 +499,7 @@
       "id": "callify-new-product",
       "client": "Joule Consulting · Callify",
       "title": "New product development",
-      "description": "Building Callify as a new product for Joule Consulting.",
+      "description": "Worked on Callify as a new product for Joule Consulting.",
       "role": "Developer / CTO",
       "stack": [],
       "featured": true,

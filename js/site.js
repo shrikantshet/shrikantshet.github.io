@@ -37,7 +37,9 @@ systemTheme.addEventListener("change", (event) => {
   if (!readStoredTheme()) applyTheme(event.matches ? "dark" : "light");
 });
 
-const response = await fetch(new URL("../data/portfolio.json", import.meta.url));
+const response = await fetch(new URL("../data/portfolio.json", import.meta.url), {
+  cache: "no-cache",
+});
 if (!response.ok) throw new Error(`Unable to load portfolio data (${response.status})`);
 
 const {
