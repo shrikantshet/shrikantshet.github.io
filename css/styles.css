@@ -131,13 +131,17 @@ button {
   top: 1rem;
   left: 1rem;
   padding: 0.7rem 1rem;
+  pointer-events: none;
+  opacity: 0;
   color: var(--inverse-text);
   background: var(--inverse-bg);
-  transform: translateY(-160%);
-  transition: transform 160ms ease;
+  transform: translateY(calc(-100% - 2rem));
+  transition: opacity 160ms ease, transform 160ms ease;
 }
 
-.skip-link:focus {
+.skip-link:focus-visible {
+  pointer-events: auto;
+  opacity: 1;
   transform: translateY(0);
 }
 
@@ -2085,6 +2089,31 @@ body.is-modal-open {
 }
 
 @media (max-width: 680px) {
+  body::before {
+    /* Let iPhone Safari extend the opaque header color behind its status bar. */
+    display: none;
+  }
+
+  .site-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    min-height: calc(52px + env(safe-area-inset-top, 0px));
+    padding-top: env(safe-area-inset-top, 0px);
+    background: var(--paper);
+    backdrop-filter: none;
+  }
+
+  main {
+    padding-top: calc(52px + env(safe-area-inset-top, 0px));
+  }
+
+  .site-navigation {
+    top: 100%;
+  }
+
   .section-shell {
     width: min(100% - 2rem, 1280px);
   }
