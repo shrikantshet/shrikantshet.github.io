@@ -19,7 +19,8 @@
       "technology",
       "research",
       "mechanical"
-    ]
+    ],
+    "projectOrder": "Keep ongoing client work first, followed by client projects in reverse order of their latest recorded date (end date, or start date when the end is unknown). Place community work after dated client projects and projects with no recorded dates last. Array order controls the archive and its featured first card."
   },
   "contact": {
     "email": "sshet24@gmail.com",
@@ -128,6 +129,7 @@
     "Claude Code",
     "Codex",
     "React",
+    "WXT",
     "Next.js",
     "Vue.js",
     "React Native",
@@ -175,7 +177,80 @@
     "Industrial IoT",
     "Data visualization",
     "Mathematical simulation",
-    "Mechanical engineering"
+    "Mechanical engineering",
+    "ElevenLabs",
+    "shadcn/ui",
+    "Problem Solving",
+    "Startup Development",
+    "Personal Finance",
+    "Technology Leadership",
+    "Technology Management",
+    "PlanetScale",
+    "Vercel",
+    "Code Review",
+    "HTML5",
+    "AWS IAM",
+    "Apollo GraphQL",
+    "Storybook",
+    "Application Programming",
+    "RDBMS",
+    "Debugging",
+    "Database Design",
+    "Data Architecture",
+    "Relational Databases",
+    "Web Development",
+    "Web Applications",
+    "Amazon S3",
+    "AWS Amplify",
+    "Front-end Development",
+    "Software Development",
+    "Application Development",
+    "HTML",
+    "CSS",
+    "Tailwind CSS",
+    "Nginx",
+    "Swagger API",
+    "Strapi",
+    "Express.js",
+    "Chakra UI",
+    "Web Application Development",
+    "Back-End Web Development",
+    "Full-Stack Development",
+    "API Development",
+    "Amazon EC2",
+    "TanStack Query",
+    "Styled Components",
+    "TypeORM",
+    "PM2",
+    "Radix UI",
+    "DaisyUI",
+    "TanStack Start",
+    "Convex",
+    "Neon",
+    "QStash",
+    "Claude Design",
+    "Axios",
+    "Formik",
+    "Yup",
+    "Cleavr.io",
+    "Sass",
+    "Material UI",
+    "Terraform",
+    "Amazon CloudFront",
+    "Nuxt",
+    "Svelte",
+    "graphql-yoga",
+    "AWS Lambda",
+    "PHP",
+    "Lumen",
+    "ESLint",
+    "Webpack",
+    "Socket.IO",
+    "Dialogflow",
+    "AutoCAD",
+    "CATIA V5",
+    "IES Virtual Environment",
+    "Engineering Equation Solver"
   ],
   "skillEmphasis": {
     "highlight": [
@@ -206,7 +281,7 @@
       "id": "vishanema-technical-advisor",
       "organization": "Vishanema Dnyati Mandal",
       "role": "Technical Advisor (IT)",
-      "description": "Providing commercial and development advisory for digitization and community-building initiatives serving a Gujarati community of about 10,000 people.",
+      "description": "Technical advisor to Kokan Vishanema Dnyati Mandal, supporting a community of about 10,000 people through technology and community management.",
       "startDate": "2020-10",
       "endDate": null,
       "periodLabel": null,
@@ -253,7 +328,7 @@
       "id": "annual-social-gathering-coordinator",
       "organization": "Dr. Babasaheb Ambedkar Technological University, Lonere",
       "role": "Annual Social Gathering Coordinator",
-      "description": "Coordinated activities for the university's annual social gathering.",
+      "description": "Coordinated the singing committee during the annual social gathering at DBATU.",
       "startDate": "2012-01",
       "endDate": "2012-05",
       "periodLabel": null
@@ -271,9 +346,9 @@
   "experiences": [
     {
       "id": "rance-consultant",
-      "period": "Nov 2025 — Present",
+      "period": "24 Nov 2025 — Present",
       "organization": "Rance Computer Pvt. Ltd.",
-      "detail": "RanceLab",
+      "detail": "RanceLab · FusionRetail · FusionResto",
       "role": "Consultant",
       "tags": [
         "Consulting",
@@ -283,13 +358,15 @@
       "tabs": [
         "leadership",
         "technology"
-      ]
+      ],
+      "startDate": "2025-11-24",
+      "endDate": null
     },
     {
       "id": "joule-fractional-cto",
-      "period": "May 2026 — Aug 2026",
+      "period": "1 Jun 2026 — 13 Aug 2026",
       "organization": "Joule Consulting Pvt. Ltd.",
-      "detail": "Callify",
+      "detail": "Callify · Qallify",
       "role": "Fractional CTO",
       "tags": [
         "Technology leadership",
@@ -299,25 +376,65 @@
       "tabs": [
         "leadership",
         "technology"
-      ]
+      ],
+      "startDate": "2026-06-01",
+      "endDate": "2026-08-13"
+    },
+    {
+      "id": "joule-consultant",
+      "period": "May 2026",
+      "organization": "Joule Consulting Pvt. Ltd.",
+      "detail": "Callify · Qallify · consulting before the Fractional CTO appointment",
+      "role": "Consultant",
+      "startDate": "2026-05",
+      "endDate": "2026-05",
+      "tags": [
+        "Technical consulting"
+      ],
+      "tabs": [
+        "technology",
+        "leadership"
+      ],
+      "parallel": true
+    },
+    {
+      "id": "independent-2025",
+      "period": "Nov 2025 — Present",
+      "organization": "Independent practice",
+      "detail": "Available for ongoing retainers in product development, modernization, and technical ownership.",
+      "role": "Freelance Software Developer",
+      "startDate": "2025-11",
+      "endDate": null,
+      "tags": [
+        "Freelance",
+        "Retainers",
+        "Technical consulting"
+      ],
+      "tabs": [
+        "technology"
+      ],
+      "parallel": true
     },
     {
       "id": "hirlekar-executive-assistant",
-      "period": "Jun 2025 — Nov 2025",
+      "period": "20 Jun 2025 — 20 Nov 2025",
       "organization": "Hirlekar Precision",
-      "detail": "",
+      "detail": "Mechanical industry · Odoo Enterprise customization",
       "role": "Executive Assistant",
       "tags": [
         "Management",
         "Operations"
       ],
       "tabs": [
-        "leadership"
-      ]
+        "leadership",
+        "mechanical"
+      ],
+      "startDate": "2025-06-20",
+      "endDate": "2025-11-20"
     },
     {
       "id": "zataakse-cto",
-      "period": "Dec 2024 — Mar 2025",
+      "period": "3 Dec 2024 — 31 Mar 2025",
       "organization": "Zataakse Technology Solutions Pvt. Ltd.",
       "detail": "",
       "role": "Chief Technology Officer",
@@ -327,24 +444,28 @@
       "tabs": [
         "leadership",
         "technology"
-      ]
+      ],
+      "startDate": "2024-12-03",
+      "endDate": "2025-03-31"
     },
     {
       "id": "independent-2024",
-      "period": "2024",
-      "organization": "Independent practice",
+      "period": "13 Aug 2024 — 2 Dec 2024",
+      "organization": "Stealth Startup",
       "detail": "",
-      "role": "Freelance Software Developer",
+      "role": "Founding Engineer",
       "tags": [
         "Software development"
       ],
       "tabs": [
         "technology"
-      ]
+      ],
+      "startDate": "2024-08-13",
+      "endDate": "2024-12-02"
     },
     {
       "id": "aurafox-cto",
-      "period": "Dec 2023 — Aug 2024",
+      "period": "1 Dec 2023 — 12 Aug 2024",
       "organization": "Aurafox Solutions Pvt. Ltd.",
       "detail": "Commutec · FleetOZ",
       "role": "Chief Technology Officer",
@@ -355,24 +476,30 @@
       "tabs": [
         "leadership",
         "technology"
-      ]
+      ],
+      "startDate": "2023-12-01",
+      "endDate": "2024-08-12"
     },
     {
       "id": "fullstack-interactive-developer",
-      "period": "Jan 2022 — Nov 2023",
+      "period": "1 Jan 2022 — Present",
       "organization": "Full-stack Interactive LLP",
-      "detail": "",
-      "role": "Full-stack Developer",
+      "detail": "Full-stack development and technical consulting; consulting for Commutec/FleetOZ preceded the CTO appointment at Aurafox.",
+      "role": "Co-founder",
       "tags": [
         "Software development"
       ],
       "tabs": [
+        "leadership",
         "technology"
-      ]
+      ],
+      "startDate": "2022-01-01",
+      "endDate": null,
+      "parallel": true
     },
     {
       "id": "independent-2021",
-      "period": "Jan 2021 — Dec 2021",
+      "period": "19 Jan 2021 — 31 Dec 2021",
       "organization": "Independent practice",
       "detail": "",
       "role": "Freelance Software Developer",
@@ -381,11 +508,13 @@
       ],
       "tabs": [
         "technology"
-      ]
+      ],
+      "startDate": "2021-01-19",
+      "endDate": "2021-12-31"
     },
     {
       "id": "intellection-project-manager",
-      "period": "Jan 2019 — Jan 2021",
+      "period": "3 Jan 2019 — 18 Jan 2021",
       "organization": "Intellection Software and Technologies Pvt. Ltd.",
       "detail": "",
       "role": "Project Manager",
@@ -396,11 +525,27 @@
       "tabs": [
         "leadership",
         "technology"
+      ],
+      "startDate": "2019-01-03",
+      "endDate": "2021-01-18",
+      "description": "Managed requirements, product planning, teams, and software delivery across the following client projects. Technologies below describe the teams and delivery portfolio.",
+      "deliveries": [
+        "eMembler — Professional networking app discovery: Requirements gathering and product design for a professional networking application. Team: 5.",
+        "Fluent Hydrosystems — Industrial IoT product: An IoT product for the mechanical industry using a Raspberry Pi-based system. Stack: Python, MongoDB, MySQL, React, Raspberry Pi. Team: 9.",
+        "Government of India research project — Petroleum simulation tool: A mathematical simulation tool for the petroleum industry. Stack: Django, ZODB, React. Team: 4.",
+        "Get100Marks — Education web and mobile apps: A web application plus iOS and Android applications for an education product. Stack: .NET, Angular, React Native. Team: 5.",
+        "Adira LLC — AI chatbots: AI-based chatbot delivery using the Orbita platform. Stack: Orbita. Team: 9.",
+        "Equinox Software and Services — Aspen HYSYS web application: A web application with an Aspen HYSYS backend engine. Stack: .NET, Angular, SQL Server. Team: 4.",
+        "BARC India — High-volume mathematical computation POC: A proof of concept for probability and statistics calculations across several gigabytes of data in seconds. Stack: Python, Electron, Apache Drill. Team: 3.",
+        "BARC India — Probability and statistics POC: A mathematical proof of concept involving probability and statistics. Stack: .NET, Angular. Team: 5.",
+        "BARC India — Real-time mapping application: A mobile data-visualization application for clustering and overlaying real-time data on maps. Stack: .NET, Angular, React Native, SQL Server. Team: 4.",
+        "BARC India — Fraud detection algorithms: Development work around fraud-detection algorithms and dataframes. Stack: Python, MongoDB. Team: 5.",
+        "BARC India — Workflow ticketing system: A custom ticketing system with a complex workflow and integrations. Stack: .NET, Angular, SQL Server. Team: 4."
       ]
     },
     {
       "id": "dbatu-assistant-professor",
-      "period": "Jul 2018 — Dec 2018",
+      "period": "4 Jul 2018 — 31 Dec 2018",
       "organization": "Dr. Babasaheb Ambedkar Technological University",
       "detail": "Lonere",
       "role": "Assistant Professor",
@@ -409,11 +554,13 @@
       ],
       "tabs": [
         "research"
-      ]
+      ],
+      "startDate": "2018-07-04",
+      "endDate": "2018-12-31"
     },
     {
       "id": "iit-madras-research-scholar",
-      "period": "Jul 2017 — Oct 2017",
+      "period": "8 Jul 2017 — 14 Oct 2017",
       "organization": "IIT Madras",
       "detail": "",
       "role": "Research Scholar",
@@ -423,11 +570,13 @@
       "parallel": true,
       "tabs": [
         "research"
-      ]
+      ],
+      "startDate": "2017-07-08",
+      "endDate": "2017-10-14"
     },
     {
       "id": "icsr-iit-madras-project-officer",
-      "period": "May 2017 — Jul 2017",
+      "period": "15 May 2017 — 7 Jul 2017",
       "organization": "ICSR, IIT Madras",
       "detail": "Centre for Industrial Consultancy and Sponsored Research",
       "role": "Project Officer",
@@ -438,11 +587,13 @@
       "tabs": [
         "research",
         "mechanical"
-      ]
+      ],
+      "startDate": "2017-05-15",
+      "endDate": "2017-07-07"
     },
     {
       "id": "shahu-assistant-professor",
-      "period": "Jul 2016 — Mar 2018",
+      "period": "18 Jul 2016 — 31 Mar 2018",
       "organization": "Chh. Shahu College of Engineering",
       "detail": "Aurangabad",
       "role": "Assistant Professor",
@@ -452,11 +603,13 @@
       "parallel": true,
       "tabs": [
         "research"
-      ]
+      ],
+      "startDate": "2016-07-18",
+      "endDate": "2018-03-31"
     },
     {
       "id": "dbatu-teaching-assistant",
-      "period": "Aug 2014 — Jul 2016",
+      "period": "18 Aug 2014 — 16 Jul 2016",
       "organization": "Dr. Babasaheb Ambedkar Technological University",
       "detail": "Lonere",
       "role": "Teaching Assistant",
@@ -465,212 +618,127 @@
       ],
       "tabs": [
         "research"
-      ]
+      ],
+      "startDate": "2014-08-18",
+      "endDate": "2016-07-16"
     },
     {
       "id": "jsw-graduate-engineer",
-      "period": "Jan 2014 — Aug 2014",
+      "period": "16 Jan 2014 — 17 Aug 2014",
       "organization": "JSW Steel Ltd.",
-      "detail": "",
+      "detail": "Pellet Plant Operations",
       "role": "Graduate Engineer Trainee",
       "tags": [
         "Mechanical industry"
       ],
       "tabs": [
         "mechanical"
-      ]
+      ],
+      "startDate": "2014-01-16",
+      "endDate": "2014-08-17"
     },
     {
       "id": "sudarshan-graduate-engineer",
-      "period": "Aug 2013 — Oct 2013",
+      "period": "16 Aug 2013 — 31 Oct 2013",
       "organization": "Sudarshan Chemical Industries Ltd.",
-      "detail": "",
+      "detail": "Six Sigma Department",
       "role": "Graduate Engineer Trainee",
       "tags": [
         "Mechanical industry"
       ],
       "tabs": [
         "mechanical"
-      ]
+      ],
+      "startDate": "2013-08-16",
+      "endDate": "2013-10-31"
     }
   ],
   "projects": [
     {
+      "id": "rancelab-product-suite",
+      "client": "Rance Computer · RanceLab",
+      "title": "RanceLab product suite",
+      "description": "Rance Computer brands include RanceLab, FusionRetail, and FusionResto. Built and maintained the Config portal for client configurations, Mobi for business analytics and AI insights, web ordering portals, self-service kiosks, and point-of-sale workflows for hospitality and retail businesses.",
+      "role": "Consultant / Developer",
+      "period": "24 Nov 2025 — Present",
+      "stack": [
+        "Next.js",
+        "React Native",
+        "TanStack Start",
+        "Node.js",
+        "Convex",
+        "Neon",
+        "Vercel",
+        "Git"
+      ],
+      "engagementIds": [
+        "rance-consultant"
+      ],
+      "tabs": [
+        "software",
+        "leadership"
+      ],
+      "featured": true
+    },
+    {
       "id": "callify-new-product",
-      "client": "Joule Consulting · Callify",
-      "title": "New product development",
-      "description": "Worked on Callify as a new product for Joule Consulting.",
-      "role": "Developer / CTO",
-      "stack": [],
+      "client": "Joule Consulting · Callify · Qallify",
+      "title": "Callify.ai revamp and AI adoption",
+      "description": "Trained the team to adopt AI tools including Claude Code and Claude Design. Planned and initiated a revamp, established the project and infrastructure, and delivered internal admin panels and initial customer-facing workflows. Left the team with a stable initial codebase and development approach.",
+      "role": "Consultant → Fractional CTO",
+      "stack": [
+        "Next.js",
+        "Node.js",
+        "PlanetScale",
+        "Vercel",
+        "QStash",
+        "Git",
+        "Claude Code",
+        "Claude Design",
+        "ElevenLabs"
+      ],
       "featured": true,
       "engagementIds": [
+        "joule-consultant",
         "joule-fractional-cto"
       ],
       "tabs": [
         "software",
         "leadership"
-      ]
-    },
-    {
-      "id": "rancelabs-erp",
-      "client": "Rance Computer · RanceLab",
-      "title": "ERP product",
-      "description": "Development work on RanceLab's enterprise resource planning product.",
-      "role": "Developer",
-      "stack": [],
-      "featured": true,
-      "engagementIds": [
-        "rance-consultant"
       ],
-      "tabs": [
-        "software",
-        "leadership"
-      ]
-    },
-    {
-      "id": "rancelabs-mobi",
-      "client": "Rance Computer · RanceLab",
-      "title": "Mobi business analytics",
-      "description": "An analytics product for business owners.",
-      "role": "",
-      "stack": [],
-      "engagementIds": [
-        "rance-consultant"
-      ],
-      "tabs": [
-        "software",
-        "leadership"
-      ]
-    },
-    {
-      "id": "rancelabs-configuration",
-      "client": "Rance Computer · RanceLab",
-      "title": "Configuration portal",
-      "description": "A configuration portal in the RanceLab product ecosystem.",
-      "role": "",
-      "stack": [],
-      "engagementIds": [
-        "rance-consultant"
-      ],
-      "tabs": [
-        "software",
-        "leadership"
-      ]
-    },
-    {
-      "id": "fleetoz-travel-platform",
-      "client": "Aurafox Solutions · Commutec",
-      "title": "FleetOZ travel management platform",
-      "description": "A product for B2B travel management, including booking and invoicing workflows.",
-      "role": "Developer / CTO",
-      "stack": [
-        "Next.js",
-        "tRPC",
-        "MySQL"
-      ],
-      "url": "https://app.fleetoz.com/",
-      "featured": true,
-      "engagementIds": [
-        "aurafox-cto"
-      ],
-      "tabs": [
-        "software",
-        "leadership"
-      ]
-    },
-    {
-      "id": "ampere-web-revamp",
-      "client": "Ampere Computing",
-      "title": "Web platform revamp",
-      "description": "Revamping web applications for a processor manufacturer, spanning corporate and customer-facing experiences.",
-      "role": "Developer / CTO",
-      "stack": [
-        "Next.js",
-        "AdonisJS",
-        "PostgreSQL"
-      ],
-      "url": "https://amperecomputing.com/",
-      "featured": true,
-      "engagementIds": [],
-      "tabs": [
-        "software",
-        "leadership"
-      ]
-    },
-    {
-      "id": "trustshare-frontends",
-      "client": "TrustCloud",
-      "title": "TrustShare frontends",
-      "description": "Building frontends for TrustCloud's TrustShare product.",
-      "role": "Developer",
-      "stack": [
-        "React"
-      ],
-      "url": "https://www.trustcloud.ai/",
-      "featured": true,
-      "engagementIds": [],
-      "tabs": [
-        "software"
-      ]
-    },
-    {
-      "id": "altruist-retail-fintech",
-      "client": "Altruist Global Holdings",
-      "title": "Fintech product for retail traders",
-      "description": "A B2C web application for backtesting trading strategies and delivering live advisory through Telegram using Kite data.",
-      "role": "Developer / CTO",
-      "stack": [
-        "Next.js",
-        "GraphQL",
-        "PostgreSQL",
-        "Redis"
-      ],
-      "featured": true,
-      "engagementIds": [],
-      "tabs": [
-        "software",
-        "leadership"
-      ]
-    },
-    {
-      "id": "altruist-broker-fintech",
-      "client": "Altruist Global Holdings",
-      "title": "Fintech product for brokers",
-      "description": "A B2B web and mobile product for brokers and financial managers serving retail investors.",
-      "role": "Developer / CTO",
-      "stack": [
-        "Vue",
-        "Laravel",
-        "PostgreSQL"
-      ],
-      "featured": true,
-      "engagementIds": [],
-      "tabs": [
-        "software",
-        "leadership"
-      ]
+      "period": "May 2026 — 13 Aug 2026",
+      "intermediary": "Joule Consulting Pvt. Ltd."
     },
     {
       "id": "adani-chrome-consulting",
-      "client": "Center for Computational Technologies",
+      "client": "Adani Group",
       "title": "Chrome plugin technical consulting",
       "description": "Database design, technology decisions, team guidance, and technical problem-solving for a Chrome plugin for Adani Group.",
-      "role": "Developer / CTO",
-      "stack": [],
-      "engagementIds": [],
+      "role": "Technical Consultant",
+      "stack": [
+        "WXT",
+        "React",
+        "Node.js",
+        "Git"
+      ],
+      "engagementIds": [
+        "independent-2025"
+      ],
       "tabs": [
         "leadership",
         "software"
-      ]
+      ],
+      "period": "24 Nov 2025 — 23 Feb 2026",
+      "intermediary": "Centre for Computational Technologies (CCTech)"
     },
     {
       "id": "hirlekar-odoo",
       "client": "Hirlekar Precision",
       "title": "Odoo customization",
-      "description": "Customizing Odoo for a precision-engineering business.",
+      "description": "Customized Odoo Enterprise for a precision-engineering business, building custom views to make business workflows easier to use.",
       "role": "Developer",
       "stack": [
-        "Odoo"
+        "Odoo Enterprise"
       ],
       "engagementIds": [
         "hirlekar-executive-assistant"
@@ -678,7 +746,353 @@
       "tabs": [
         "software",
         "engineering"
+      ],
+      "period": "20 Jun 2025 — 20 Nov 2025"
+    },
+    {
+      "id": "zataakse-delivery",
+      "client": "Zataakse Technology Solutions",
+      "title": "ZataakSe · deliveries to travellers",
+      "description": "Enabled local shops to deliver to travellers who paused their drive, with shopkeepers handing deliveries to customers inside their vehicles. Built the backend and admin application in Next.js and customer, merchant, and operations applications in React Native; led a team of three. Selected technologies and infrastructure, released mobile applications to the Apple App Store and Google Play Store, and handled deployment and maintenance.",
+      "role": "Chief Technology Officer",
+      "period": "3 Dec 2024 — 31 Mar 2025",
+      "stack": [
+        "Next.js",
+        "React Native",
+        "Node.js",
+        "PlanetScale",
+        "Vercel",
+        "QStash",
+        "Git"
+      ],
+      "engagementIds": [
+        "zataakse-cto"
+      ],
+      "tabs": [
+        "software",
+        "leadership"
       ]
+    },
+    {
+      "id": "stealth-produce-platform",
+      "client": "Stealth Startup",
+      "title": "B2B produce and logistics platform",
+      "description": "Built a B2B web platform connecting vegetable outlets in APMC with HoReCa, including logistics workflows.",
+      "role": "Founding Engineer",
+      "period": "13 Aug 2024 — 2 Dec 2024",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Radix UI",
+        "Tailwind CSS",
+        "TanStack Query",
+        "shadcn/ui",
+        "Node.js",
+        "tRPC",
+        "MySQL",
+        "Vercel",
+        "PlanetScale",
+        "Amazon S3",
+        "GitHub"
+      ],
+      "engagementIds": [
+        "independent-2024"
+      ],
+      "tabs": [
+        "software"
+      ]
+    },
+    {
+      "id": "fleetoz-travel-platform",
+      "client": "Aurafox Solutions · Commutec",
+      "title": "FleetOZ travel management platform",
+      "description": "Built FleetOZ from scratch for B2B travel desk management, cab bookings, and invoicing. Gathered stakeholder requirements, prioritized delivery, built the IT team, and handled development, testing, deployment, and maintenance. Released in May 2024. Consulting via Full-stack Interactive preceded the CTO role at Aurafox.",
+      "role": "Consultant → CTO",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Radix UI",
+        "Tailwind CSS",
+        "DaisyUI",
+        "TanStack Query",
+        "Node.js",
+        "tRPC",
+        "MySQL",
+        "Vercel",
+        "PlanetScale",
+        "Nginx",
+        "PM2",
+        "Amazon EC2",
+        "Amazon S3",
+        "GitHub"
+      ],
+      "url": "https://app.fleetoz.com/",
+      "featured": true,
+      "engagementIds": [
+        "fullstack-interactive-developer",
+        "aurafox-cto"
+      ],
+      "tabs": [
+        "software",
+        "leadership"
+      ],
+      "period": "Apr 2023 — 12 Aug 2024",
+      "intermediary": "Full-stack Interactive LLP (consulting phase, Apr–Nov 2023); Aurafox Solutions (CTO, Dec 2023–Aug 2024)"
+    },
+    {
+      "id": "trustshare-frontends",
+      "client": "TrustCloud",
+      "title": "TrustShare frontends",
+      "description": "Added workflows and forms to existing React applications, including the admin panel and customer-facing frontend for TrustShare subscribers. Provided frontend development and support.",
+      "role": "Frontend Developer",
+      "stack": [
+        "React",
+        "Styled Components",
+        "Storybook",
+        "Git"
+      ],
+      "url": "https://www.trustcloud.ai/",
+      "featured": true,
+      "engagementIds": [
+        "fullstack-interactive-developer"
+      ],
+      "tabs": [
+        "software"
+      ],
+      "period": "Jul 2022 — Jan 2024",
+      "intermediary": "WhileOne Techsoft via Full-stack Interactive LLP"
+    },
+    {
+      "id": "ampere-web-revamp",
+      "client": "Ampere Computing",
+      "title": "Web platform revamp",
+      "description": "Consolidated three applications—corporate website, solution portal, and customer connect—and added a developer portal. Replaced YAML-driven content with a CMS, built a shared component library and external user management, and led development, releases, maintenance, and security coordination. Handed infrastructure to the DevOps team after ten months.",
+      "role": "Full-stack Developer / Technical Consultant",
+      "stack": [
+        "Next.js",
+        "Chakra UI",
+        "TypeScript",
+        "Strapi",
+        "AdonisJS",
+        "PostgreSQL",
+        "AWS Amplify",
+        "Nginx",
+        "PM2",
+        "Amazon EC2",
+        "Amazon S3",
+        "GitLab",
+        "Terraform",
+        "Amazon CloudFront"
+      ],
+      "url": "https://amperecomputing.com/",
+      "featured": true,
+      "engagementIds": [
+        "independent-2021",
+        "fullstack-interactive-developer"
+      ],
+      "tabs": [
+        "software",
+        "leadership"
+      ],
+      "period": "Oct 2021 — Nov 2023",
+      "intermediary": "WhileOne Techsoft; independent practice, then Full-stack Interactive LLP"
+    },
+    {
+      "id": "ajay-mehta-broker-product",
+      "client": "Ajay Mehta",
+      "title": "Custom Angel sub-broker product",
+      "description": "Independently developed, tested, deployed, and maintained a product for managing client trading accounts for an Angel sub-broker. The product was used by three client organizations.",
+      "role": "Developer",
+      "stack": [
+        "React",
+        "Chakra UI",
+        "Node.js",
+        "Express.js",
+        "TypeScript",
+        "Nginx",
+        "PM2",
+        "PostgreSQL",
+        "Git"
+      ],
+      "engagementIds": [
+        "independent-2021"
+      ],
+      "tabs": [
+        "software"
+      ],
+      "period": "Jun 2021 — Jun 2023"
+    },
+    {
+      "id": "aerem-pwa",
+      "client": "Aerem Solutions",
+      "title": "Progressive web application",
+      "description": "Built a progressive web application connecting solar project contractors with their clients. Led frontend development and implemented backend APIs as required.",
+      "role": "Developer",
+      "stack": [
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "AdonisJS",
+        "PostgreSQL",
+        "Redis",
+        "Nginx",
+        "PM2",
+        "Amazon EC2",
+        "Amazon S3",
+        "Cleavr.io",
+        "GitLab"
+      ],
+      "url": "https://www.aerem.co/",
+      "engagementIds": [
+        "fullstack-interactive-developer"
+      ],
+      "tabs": [
+        "software"
+      ],
+      "period": "Started May 2022"
+    },
+    {
+      "id": "ampere-maintenance",
+      "client": "Ampere Computing",
+      "title": "Application maintenance",
+      "description": "Maintained the existing YAML-driven website and an Express backend that validated forms and generated single-use download links, alongside the platform revamp.",
+      "role": "Developer",
+      "stack": [
+        "Next.js",
+        "Sass",
+        "Material UI",
+        "Node.js",
+        "Express.js",
+        "Redis",
+        "AWS Amplify",
+        "Amazon EC2",
+        "Amazon S3",
+        "Nginx",
+        "Git"
+      ],
+      "url": "https://amperecomputing.com/",
+      "engagementIds": [
+        "independent-2021",
+        "fullstack-interactive-developer"
+      ],
+      "tabs": [
+        "software"
+      ],
+      "period": "Oct 2021 — Feb 2022",
+      "intermediary": "WhileOne Techsoft; independent practice, then Full-stack Interactive LLP"
+    },
+    {
+      "id": "doonut-cms-frontend",
+      "client": "Karo Life · Doonut",
+      "title": "CMS-driven frontend",
+      "description": "Built a CMS-driven frontend for an online education platform, converting Adobe XD designs into dynamic pages with SEO and incremental static regeneration.",
+      "role": "Developer",
+      "stack": [
+        "Next.js",
+        "Chakra UI",
+        "Strapi",
+        "PostgreSQL",
+        "AWS Amplify",
+        "Amazon EC2",
+        "Nginx",
+        "PM2",
+        "Git"
+      ],
+      "engagementIds": [
+        "independent-2021"
+      ],
+      "tabs": [
+        "software"
+      ],
+      "period": "Jul 2021 — Oct 2021"
+    },
+    {
+      "id": "altruist-retail-fintech",
+      "client": "Altruist Global Holdings",
+      "title": "Alpha2Sigma · retail trading platform",
+      "description": "Contributed about 30% of development to a B2C platform integrating Kite data, trading-strategy backtesting, and live advisory through Telegram. Worked on frontend, backend, testing, deployment, and maintenance; Abhijit Ghogre led architecture.",
+      "role": "Developer",
+      "stack": [
+        "Next.js",
+        "Apollo GraphQL",
+        "TypeScript",
+        "Chakra UI",
+        "Node.js",
+        "Express.js",
+        "GraphQL",
+        "Nginx",
+        "PM2",
+        "PostgreSQL",
+        "Redis",
+        "Git",
+        "ClickUp"
+      ],
+      "featured": true,
+      "engagementIds": [
+        "independent-2021"
+      ],
+      "tabs": [
+        "software"
+      ],
+      "period": "Mar 2021 — Aug 2021"
+    },
+    {
+      "id": "altruist-broker-fintech",
+      "client": "Altruist Global Holdings",
+      "title": "Fintech product for brokers",
+      "description": "Maintained a B2B web and mobile product enabling brokers and financial managers to manage retail-investor accounts. Implemented minor feature requests and integrations with Kite, Angel, and Telegram; the existing application was architected and developed by Abhijit Ghogre.",
+      "role": "Developer",
+      "stack": [
+        "Vue.js",
+        "Tailwind CSS",
+        "Laravel",
+        "Nginx",
+        "PostgreSQL",
+        "Redis",
+        "Git",
+        "ClickUp"
+      ],
+      "featured": true,
+      "engagementIds": [
+        "independent-2021"
+      ],
+      "tabs": [
+        "software"
+      ],
+      "period": "Mar 2021 — Aug 2021"
+    },
+    {
+      "id": "vishanema-community-app",
+      "client": "Vishanema Dnyati Mandal",
+      "title": "Community management application",
+      "description": "Built member, family, profile, role, and permission management for the Vishanema community of about 10,000 people. Delivered about 95% of development and owned testing and deployment, with code review and implementation guidance from Abhijit Ghogre. Live since 9 March 2021.",
+      "role": "Developer / Technical Advisor",
+      "stack": [
+        "React",
+        "Chakra UI",
+        "Axios",
+        "Formik",
+        "Yup",
+        "Node.js",
+        "Express.js",
+        "TypeORM",
+        "TypeScript",
+        "PostgreSQL",
+        "Git",
+        "Amazon EC2",
+        "Nginx",
+        "ClickUp"
+      ],
+      "url": "https://vishanema.org/",
+      "engagementIds": [
+        "independent-2021",
+        "vishanema-technical-advisor"
+      ],
+      "tabs": [
+        "software",
+        "leadership"
+      ],
+      "period": "Jan 2021 — Present"
     },
     {
       "id": "cuckoo-websites",
@@ -690,288 +1104,8 @@
       "engagementIds": [],
       "tabs": [
         "software"
-      ]
-    },
-    {
-      "id": "aerem-pwa",
-      "client": "Aerem Solutions",
-      "title": "Progressive web application",
-      "description": "Building a progressive web application for Aerem.",
-      "role": "Developer",
-      "stack": [
-        "PWA"
       ],
-      "url": "https://www.aerem.co/",
-      "engagementIds": [],
-      "tabs": [
-        "software"
-      ]
-    },
-    {
-      "id": "vishanema-community-app",
-      "client": "Vishanema Dnyati Mandal",
-      "title": "Community management application",
-      "description": "A web application for member, family, profile, role, and permission management for the Vishanema community.",
-      "role": "Developer / CTO",
-      "stack": [
-        "React",
-        "Node.js",
-        "PostgreSQL"
-      ],
-      "url": "https://vishanema.org/",
-      "engagementIds": [
-        "vishanema-technical-advisor"
-      ],
-      "tabs": [
-        "software",
-        "leadership"
-      ]
-    },
-    {
-      "id": "ajay-mehta-broker-product",
-      "client": "Ajay Mehta",
-      "title": "Custom angel sub-broker product",
-      "description": "A custom software product for an angel sub-broker.",
-      "role": "Developer / CTO",
-      "stack": [],
-      "engagementIds": [],
-      "tabs": [
-        "software",
-        "leadership"
-      ]
-    },
-    {
-      "id": "doonut-cms-frontend",
-      "client": "Karo Life · Doonut",
-      "title": "CMS-driven frontend",
-      "description": "A frontend powered by a content management system.",
-      "role": "Developer",
-      "stack": [
-        "CMS"
-      ],
-      "engagementIds": [],
-      "tabs": [
-        "software"
-      ]
-    },
-    {
-      "id": "ampere-maintenance",
-      "client": "Ampere Computing",
-      "title": "Application maintenance",
-      "description": "Maintaining a web application for Ampere Computing.",
-      "role": "Developer",
-      "stack": [],
-      "url": "https://amperecomputing.com/",
-      "engagementIds": [],
-      "tabs": [
-        "software"
-      ]
-    },
-    {
-      "id": "emembler-discovery",
-      "client": "eMembler",
-      "title": "Professional networking app discovery",
-      "description": "Requirements gathering and product design for a professional networking application.",
-      "role": "Project Manager",
-      "stack": [],
-      "engagementIds": [
-        "intellection-project-manager"
-      ],
-      "tabs": [
-        "leadership"
-      ]
-    },
-    {
-      "id": "fluent-industrial-iot",
-      "client": "Fluent Hydrosystems",
-      "title": "Industrial IoT product",
-      "description": "An IoT product for the mechanical industry using a Raspberry Pi-based system.",
-      "role": "Project Manager",
-      "stack": [
-        "Python",
-        "MongoDB",
-        "MySQL",
-        "React",
-        "Raspberry Pi"
-      ],
-      "engagementIds": [
-        "intellection-project-manager"
-      ],
-      "tabs": [
-        "leadership",
-        "engineering",
-        "software"
-      ]
-    },
-    {
-      "id": "government-petroleum-simulation",
-      "client": "Government of India research project",
-      "title": "Petroleum simulation tool",
-      "description": "A mathematical simulation tool for the petroleum industry.",
-      "role": "Project Manager",
-      "stack": [
-        "Django",
-        "ZODB",
-        "React"
-      ],
-      "engagementIds": [
-        "intellection-project-manager"
-      ],
-      "tabs": [
-        "leadership",
-        "engineering",
-        "software"
-      ]
-    },
-    {
-      "id": "get100marks-apps",
-      "client": "Get100Marks",
-      "title": "Education web and mobile apps",
-      "description": "A web application plus iOS and Android applications for an education product.",
-      "role": "Project Manager",
-      "stack": [
-        ".NET",
-        "Angular",
-        "React Native"
-      ],
-      "engagementIds": [
-        "intellection-project-manager"
-      ],
-      "tabs": [
-        "leadership",
-        "software"
-      ]
-    },
-    {
-      "id": "adira-chatbots",
-      "client": "Adira LLC",
-      "title": "AI chatbots",
-      "description": "AI-based chatbot delivery using the Orbita platform.",
-      "role": "Project Manager",
-      "stack": [
-        "Orbita"
-      ],
-      "engagementIds": [
-        "intellection-project-manager"
-      ],
-      "tabs": [
-        "leadership",
-        "software"
-      ]
-    },
-    {
-      "id": "equinox-hysys",
-      "client": "Equinox Software and Services",
-      "title": "Aspen HYSYS web application",
-      "description": "A web application with an Aspen HYSYS backend engine.",
-      "role": "Project Manager",
-      "stack": [
-        ".NET",
-        "Angular",
-        "SQL Server"
-      ],
-      "engagementIds": [
-        "intellection-project-manager"
-      ],
-      "tabs": [
-        "leadership",
-        "engineering",
-        "software"
-      ]
-    },
-    {
-      "id": "barc-high-volume-poc",
-      "client": "BARC India",
-      "title": "High-volume mathematical computation POC",
-      "description": "A proof of concept for probability and statistics calculations across several gigabytes of data in seconds.",
-      "role": "Project Manager",
-      "stack": [
-        "Python",
-        "Electron",
-        "Apache Drill"
-      ],
-      "engagementIds": [
-        "intellection-project-manager"
-      ],
-      "tabs": [
-        "leadership",
-        "software"
-      ]
-    },
-    {
-      "id": "barc-statistics-poc",
-      "client": "BARC India",
-      "title": "Probability and statistics POC",
-      "description": "A mathematical proof of concept involving probability and statistics.",
-      "role": "Project Manager",
-      "stack": [
-        ".NET",
-        "Angular"
-      ],
-      "engagementIds": [
-        "intellection-project-manager"
-      ],
-      "tabs": [
-        "leadership",
-        "software"
-      ]
-    },
-    {
-      "id": "barc-mapping",
-      "client": "BARC India",
-      "title": "Real-time mapping application",
-      "description": "A mobile data-visualization application for clustering and overlaying real-time data on maps.",
-      "role": "Project Manager",
-      "stack": [
-        ".NET",
-        "Angular",
-        "React Native",
-        "SQL Server"
-      ],
-      "engagementIds": [
-        "intellection-project-manager"
-      ],
-      "tabs": [
-        "leadership",
-        "software"
-      ]
-    },
-    {
-      "id": "barc-fraud-detection",
-      "client": "BARC India",
-      "title": "Fraud detection algorithms",
-      "description": "Development work around fraud-detection algorithms and dataframes.",
-      "role": "Project Manager",
-      "stack": [
-        "Python",
-        "MongoDB"
-      ],
-      "engagementIds": [
-        "intellection-project-manager"
-      ],
-      "tabs": [
-        "leadership",
-        "software"
-      ]
-    },
-    {
-      "id": "barc-ticketing",
-      "client": "BARC India",
-      "title": "Workflow ticketing system",
-      "description": "A custom ticketing system with a complex workflow and integrations.",
-      "role": "Project Manager",
-      "stack": [
-        ".NET",
-        "Angular",
-        "SQL Server"
-      ],
-      "engagementIds": [
-        "intellection-project-manager"
-      ],
-      "tabs": [
-        "leadership",
-        "software"
-      ]
+      "period": "Project dates not recorded"
     }
   ],
   "practiceAreas": [
@@ -1025,19 +1159,328 @@
   ],
   "testimonials": [
     {
-      "quote": "Technically sound and willing to go beyond the expected.",
+      "quote": "Technically sound and going above and beyond are just 2 of the many qualities that Shrikant brings in.",
       "person": "Rajeev Gadgil",
-      "context": "Founder & Director, WhileOne Techsoft"
+      "context": "Founder & Director, WhileOne Techsoft",
+      "source": "LinkedIn Services · 3 Nov 2021",
+      "url": "https://www.linkedin.com/services/page/a810a0308345830949/"
     },
     {
-      "quote": "A quick learner, proactive collaborator, and strong front-end practitioner.",
+      "quote": "Shrikant is a quick learner and is very pro-active. He has in-depth knowledge of front-end technologies.",
       "person": "Sameer Natu",
-      "context": "Founder & Director, WhileOne Techsoft"
+      "context": "Founder & Director, WhileOne Techsoft",
+      "source": "LinkedIn Services · 3 Nov 2021",
+      "url": "https://www.linkedin.com/services/page/a810a0308345830949/"
     },
     {
-      "quote": "Strong at translating business requirements into product and technical direction.",
+      "quote": "Shrikant is exceptional in understanding business requirements and translating them into a product vision.",
       "person": "Nitin Garg",
-      "context": "Director, NVT Group"
+      "context": "Director, NVT Group",
+      "source": "LinkedIn recommendation",
+      "url": "https://www.linkedin.com/in/shrikantshet/details/recommendations/"
     }
-  ]
+  ],
+  "profile": {
+    "name": "Shrikant Avinash Shet",
+    "headline": "Freelance Technology Consultant | Fractional CTO | Full-stack & AI-assisted Product Engineering",
+    "summary": "I help founders and teams build, modernize, and maintain software through ongoing freelance and consulting retainers. I take ownership of product discovery, architecture, full-stack development, deployment, and technical delivery, and provide fractional CTO support when a team needs sustained technology leadership.",
+    "availability": "Available for ongoing retainers in product development, modernization, and technical ownership."
+  },
+  "teamTechnologies": [
+    "Angular",
+    ".NET",
+    "Django",
+    "Flask",
+    "Kotlin",
+    "Swift",
+    "Objective-C",
+    "SQLite",
+    "MariaDB",
+    "Firebase",
+    "ZODB",
+    "Apache Drill",
+    "Wix",
+    "Orbita"
+  ],
+  "education": [
+    {
+      "title": "Ph.D. studies · Mechanical Engineering (discontinued)",
+      "organization": "IIT Madras",
+      "period": "Jul–Oct 2017",
+      "description": "Research Scholar in the Refrigeration Laboratory under Prof. A. Mani; discontinued the Ph.D. in October 2017."
+    },
+    {
+      "title": "M.Tech · Thermal and Fluids Engineering",
+      "organization": "Dr. Babasaheb Ambedkar Technological University, Lonere",
+      "period": "2014–2016",
+      "description": "University Gold Medallist. GPA 8.52/10 (85.2%). Qualified GATE in 2013, 2014, and 2015. Activities included ICTIEE at COEP/IUCEE, RE-Invest (MNRE), Avishkar 2014, an IES Virtual Environment workshop, and conducting an Engineering Equation Solver workshop."
+    },
+    {
+      "title": "B.Tech · Mechanical Engineering",
+      "organization": "Dr. Babasaheb Ambedkar Technological University, Lonere",
+      "period": "2009–2013",
+      "description": "GPA 8.02/10 (72.91%). First prize in the Chemfraternity 2011 technical exhibition."
+    },
+    {
+      "title": "HSC · Science",
+      "organization": "Maharashtra State Board · Mahatma School",
+      "period": "2007–2009",
+      "description": "84.67%; completed February 2009."
+    },
+    {
+      "title": "SSC",
+      "organization": "Maharashtra State Board · Mahatma School",
+      "period": "2006–2007",
+      "description": "82.30%; completed March 2007."
+    },
+    {
+      "title": "Personal Finance Mastery",
+      "organization": "1% Club",
+      "period": "Jul 2024 — Present",
+      "description": "Continuing personal finance education."
+    }
+  ],
+  "publications": [
+    {
+      "title": "Experimental studies on transcritical CO2 heat pump system for simultaneous water cooling and heating application",
+      "authors": "Abhijit Date, Omprakash Patil, Shrikant A Shet, Neeraj Agrawal",
+      "venue": "International Journal of Green Energy",
+      "date": "2021-06-27",
+      "type": "Journal paper",
+      "url": "https://doi.org/10.1080/15435075.2021.1941045"
+    },
+    {
+      "title": "Energetic and exergetic studies of modified CO2 transcritical refrigeration cycles",
+      "authors": "Omprakash S Patil, Shrikant A Shet, Manish Jadhao, Neeraj Agrawal",
+      "venue": "International Journal of Low-Carbon Technologies",
+      "date": "2020-07-22",
+      "type": "Journal paper",
+      "url": "https://doi.org/10.1093/ijlct/ctaa042"
+    },
+    {
+      "title": "Energetic and exergetic studies of modified CO2 transcritical refrigeration cycles",
+      "authors": "Shrikant Shet, Omprakash Patil, Neeraj Agrawal",
+      "venue": "12th IIR Gustav Lorentzen Natural Working Fluids Conference · Edinburgh, Scotland",
+      "date": "2016-08-24",
+      "type": "Conference presentation"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Reviewer · International Journal of Refrigeration",
+      "organization": "Elsevier",
+      "period": "Apr 2018"
+    },
+    {
+      "title": "University Gold Medal · M.Tech",
+      "organization": "DBATU",
+      "period": "Jul 2016"
+    },
+    {
+      "title": "Wheelomation · second prize",
+      "organization": "Mindspark, COEP",
+      "period": "Jan 2012"
+    },
+    {
+      "title": "Wheelomation · first prize",
+      "organization": "Mindspark, COEP",
+      "period": "Jan 2011"
+    },
+    {
+      "title": "Rally Mania · third prize",
+      "organization": "Axlerate, MIT Pune",
+      "period": "Jan 2011"
+    },
+    {
+      "title": "Inter-departmental drama · first prize",
+      "organization": "Antarnad, DBATU",
+      "period": "Jan 2010"
+    },
+    {
+      "title": "Basketball · second place",
+      "organization": "Annual Sports Meet, DBATU",
+      "period": "Jan 2010"
+    },
+    {
+      "title": "Technical exhibition · first prize",
+      "organization": "Chemfraternity, DBATU",
+      "period": "2011"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Introduction to AWS Identity and Access Management (IAM)",
+      "organization": "AWS",
+      "period": "Mar 2023"
+    },
+    {
+      "title": "Web Components and Modularization: Practical Approaches",
+      "organization": "LinkedIn",
+      "period": "Nov 2022"
+    },
+    {
+      "title": "Google Universal Analytics Essential Training (2020)",
+      "organization": "LinkedIn",
+      "period": "Oct 2021"
+    },
+    {
+      "title": "ESLint: Checking for Syntax and Logic Errors",
+      "organization": "LinkedIn",
+      "period": "Oct 2021"
+    },
+    {
+      "title": "Technical SEO",
+      "organization": "LinkedIn",
+      "period": "Aug 2021"
+    },
+    {
+      "title": "Building APIs with Swagger and the OpenAPI Specification",
+      "organization": "LinkedIn",
+      "period": "Aug 2021"
+    },
+    {
+      "title": "Learning NGINX",
+      "organization": "LinkedIn",
+      "period": "Aug 2021"
+    },
+    {
+      "title": "Build a React Application Using AWS Amplify",
+      "organization": "LinkedIn",
+      "period": "Aug 2021"
+    },
+    {
+      "title": "Software Architecture: Patterns for Developers",
+      "organization": "LinkedIn",
+      "period": "May 2021"
+    },
+    {
+      "title": "Learning webpack 4",
+      "organization": "LinkedIn",
+      "period": "Apr 2021"
+    },
+    {
+      "title": "Node.js: Real-Time Web with Socket.IO",
+      "organization": "LinkedIn",
+      "period": "Apr 2021"
+    },
+    {
+      "title": "React: Building Progressive Web Apps (PWAs)",
+      "organization": "LinkedIn",
+      "period": "Apr 2021"
+    },
+    {
+      "title": "TypeScript: Object-Oriented Programming",
+      "organization": "LinkedIn",
+      "period": "Mar 2021"
+    },
+    {
+      "title": "Learning Jira (Cloud Edition)",
+      "organization": "LinkedIn",
+      "period": "Dec 2020"
+    },
+    {
+      "title": "Planning and Releasing Software with JIRA",
+      "organization": "LinkedIn",
+      "period": "Dec 2020"
+    },
+    {
+      "title": "Learning Jira Software",
+      "organization": "LinkedIn",
+      "period": "Sep 2020"
+    },
+    {
+      "title": "Agile Foundations",
+      "organization": "LinkedIn",
+      "period": "Sep 2020"
+    },
+    {
+      "title": "Scrum: The Basics",
+      "organization": "LinkedIn",
+      "period": "Sep 2020"
+    },
+    {
+      "title": "Learn JavaScript - For Beginners",
+      "organization": "Udemy",
+      "period": "Jul 2020"
+    },
+    {
+      "title": "Agile Project Management: Scrum Step by Step with Examples",
+      "organization": "Udemy",
+      "period": "May 2020"
+    },
+    {
+      "title": "Learn Microsoft Office 365 (A basic course for Office 365 administrators)",
+      "organization": "Udemy",
+      "period": "May 2020"
+    },
+    {
+      "title": "The Complete 2020 Web Development Bootcamp (Basics of MERN Stack)",
+      "organization": "Udemy",
+      "period": "May 2020"
+    },
+    {
+      "title": "Learn to build chatbots with Dialogflow",
+      "organization": "Udemy",
+      "period": "May 2020"
+    },
+    {
+      "title": "Basics of Scrum, Agile and Project Delivery",
+      "organization": "Udemy",
+      "period": "Mar 2020"
+    },
+    {
+      "title": "Complete Python Bootcamp: Go from Zero to Hero in Python 3",
+      "organization": "Udemy",
+      "period": "Feb 2020"
+    },
+    {
+      "title": "SDLC Models: Basics for Beginners",
+      "organization": "Udemy",
+      "period": "Feb 2020"
+    },
+    {
+      "title": "Make your agile team faster and more productive",
+      "organization": "Udemy",
+      "period": "Jan 2020"
+    },
+    {
+      "title": "MongoDB Essentials - Understand the Basics of MongoDB",
+      "organization": "Udemy",
+      "period": "Jan 2020"
+    },
+    {
+      "title": "AutoCAD",
+      "organization": "MITCON",
+      "period": ""
+    },
+    {
+      "title": "IES Virtual Environment",
+      "organization": "IES Holdings",
+      "period": ""
+    },
+    {
+      "title": "CATIA V5 R20",
+      "organization": "",
+      "period": ""
+    }
+  ],
+  "experienceTotals": {
+    "asOf": "2026-09-14",
+    "method": "Distinct calendar days across all roles, including start and end dates; overlapping days count once. Approximate years and months use 365.2425 days per year. Mechanical industry includes JSW Steel, Sudarshan Chemical Industries, and Hirlekar Precision. Categories may overlap and must not be summed to calculate overall experience.",
+    "totalDays": 4605,
+    "categories": [
+      {
+        "label": "IT and management",
+        "days": 2812
+      },
+      {
+        "label": "Research and teaching",
+        "days": 1502
+      },
+      {
+        "label": "Mechanical industry",
+        "days": 445
+      }
+    ]
+  }
 }

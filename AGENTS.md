@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-This repository is a dependency-free static portfolio deployed from the repository root with GitHub Pages. `index.html` contains the page structure, metadata, and JSON-LD. Handwritten styles live in `css/styles.css`; interactive filtering, theming, navigation, and reveal behavior live in `js/site.js`. Keep factual career and card content in `data/portfolio.json`. Store photos and icons in `images/`. Search crawl files and the résumé remain at the repository root.
+This repository is a dependency-free static portfolio deployed from the repository root with GitHub Pages. `index.html` contains the page structure, metadata, and JSON-LD. Handwritten styles live in `css/styles.css`; interactive filtering, theming, navigation, and reveal behavior live in `js/site.js`. Keep factual career and card content in `data/portfolio.json`. Store photos and icons in `images/`. Search crawl files remain at the repository root. The résumé link points to the maintained Google Doc; do not require an uploaded PDF.
 
 ## Build, Test, and Development Commands
 
@@ -18,7 +18,7 @@ Use two-space indentation in HTML, CSS, JavaScript, and JSON. Prefer semantic HT
 
 ## Testing Guidelines
 
-Run `npm test` after changing content, links, or assets. Then review the site at mobile and desktop widths. Confirm the project search and discipline filters, timeline filters, theme persistence, mobile navigation, résumé download, LinkedIn links, and reduced-motion behavior. Check the browser console for errors. There is no coverage threshold; validation and focused manual review are required.
+Run `npm test` after changing content, links, or assets. Then review the site at mobile and desktop widths. Confirm the project search and discipline filters, timeline filters, theme persistence, mobile navigation, résumé Google Doc link, LinkedIn links, and reduced-motion behavior. Check the browser console for errors. There is no coverage threshold; validation and focused manual review are required.
 
 ## Commit & Pull Request Guidelines
 

@@ -44,6 +44,13 @@ if (!response.ok) throw new Error(`Unable to load portfolio data (${response.sta
 
 const {
   aiPractice,
+  profile,
+  education,
+  publications,
+  certifications,
+  awards,
+  teamTechnologies,
+  experienceTotals,
   communityEngagements,
   contact,
   experiences,
@@ -146,7 +153,7 @@ function renderProjects() {
   const query = projectSearch.value.trim().toLowerCase();
   const filtered = projects.filter((project) => {
     const inTab = activeProjectFilter === "all" || project.tabs.includes(activeProjectFilter);
-    const searchable = [project.client, project.title, project.description, project.role, ...(project.stack || [])]
+    const searchable = [project.client, project.title, project.description, project.role, project.period, project.intermediary, ...(project.stack || [])]
       .join(" ")
       .toLowerCase();
     return inTab && (!query || searchable.includes(query));
@@ -155,7 +162,6 @@ function renderProjects() {
   const visible = showAllProjects || query || activeProjectFilter !== "all" ? filtered : filtered.slice(0, 8);
   projectGrid.innerHTML = visible
     .map((project, index) => {
-      const projectNumber = String(projects.indexOf(project) + 1).padStart(2, "0");
       const relatedEngagements = project.engagementIds.map((id) => engagementById.get(id)).filter(Boolean);
       const title = project.url
         ? `<a href="${escapeHTML(project.url)}" target="_blank" rel="noreferrer">${escapeHTML(project.title)}<span aria-hidden="true"> ↗</span></a>`
@@ -163,12 +169,13 @@ function renderProjects() {
       return `
         <article id="work-${escapeHTML(project.id)}" class="project-card reveal ${index === 0 && activeProjectFilter === "all" ? "project-card--feature" : ""}">
           <div class="project-card__meta">
-            <span>FILE ${projectNumber}</span>
+            <span>${escapeHTML(project.period)}</span>
             <span>${escapeHTML(project.role || "Engagement")}</span>
           </div>
           <p class="project-card__client">${escapeHTML(project.client)}</p>
           <h3>${title}</h3>
           <p>${escapeHTML(project.description)}</p>
+          ${project.intermediary ? `<p class="project-intermediary">Via ${escapeHTML(project.intermediary)}</p>` : ""}
           ${renderRelationships("Engagements", relatedEngagements.map(makeEngagementLink))}
           ${project.stack?.length ? `<div class="tag-list">${project.stack.map(makeTag).join("")}</div>` : ""}
         </article>`;
@@ -205,6 +212,8 @@ function renderTimeline() {
               <h3>${escapeHTML(experience.role)}</h3>
               <p class="timeline-entry__organization">${escapeHTML(experience.organization)}</p>
               ${experience.detail ? `<p class="timeline-entry__detail">${escapeHTML(experience.detail)}</p>` : ""}
+              ${experience.description ? `<p>${escapeHTML(experience.description)}</p>` : ""}
+              ${experience.deliveries ? `<details class="delivery-details"><summary>Client projects (${experience.deliveries.length})</summary><ul>${experience.deliveries.map((delivery) => `<li>${escapeHTML(delivery)}</li>`).join("")}</ul></details>` : ""}
               <div class="tag-list">${experience.tags.map(makeTag).join("")}</div>
             </div>
             ${renderRelationships("Work files", relatedProjects.map(makeProjectLink))}
@@ -316,10 +325,28 @@ function renderTestimonials() {
       (item) => `
         <figure class="quote-card reveal">
           <blockquote>“${escapeHTML(item.quote)}”</blockquote>
-          <figcaption><strong>${escapeHTML(item.person)}</strong><span>${escapeHTML(item.context)}</span></figcaption>
+          <figcaption><strong>${escapeHTML(item.person)}</strong><span>${escapeHTML(item.context)}</span>${item.url ? `<a href="${escapeHTML(item.url)}" target="_blank" rel="noreferrer">${escapeHTML(item.source)}</a>` : ""}</figcaption>
         </figure>`,
     )
     .join("");
+}
+
+function renderProfile() {
+  document.querySelector("[data-profile-headline]").textContent = profile.headline;
+  document.querySelector("[data-profile-summary]").textContent = profile.summary;
+  const months = Math.floor(experienceTotals.totalDays / (365.2425 / 12));
+  document.querySelector("[data-experience-total]").textContent =
+    `About ${Math.floor(months / 12)} years ${months % 12} months of experience (${experienceTotals.totalDays.toLocaleString()} distinct days), as of ${formatCommunityDate(experienceTotals.asOf)}. Concurrent roles count once.`;
+}
+
+function renderFoundations() {
+  const record = (item) => `<li><strong>${escapeHTML(item.title)}</strong><p>${escapeHTML([item.organization, item.period].filter(Boolean).join(" · "))}</p>${item.description ? `<p>${escapeHTML(item.description)}</p>` : ""}</li>`;
+  document.querySelector("[data-education]").innerHTML = `<span>Education</span><h3>Qualifications and continuing learning</h3><ul class="foundation-records">${education.map(record).join("")}</ul>`;
+  document.querySelector("[data-foundations]").innerHTML = `
+    <article class="foundation-card reveal"><span>Research</span><h3>Two journal papers and one conference</h3><ul class="foundation-records foundation-records--columns">${publications.map((item) => `<li><strong>${item.url ? `<a href="${escapeHTML(item.url)}" target="_blank" rel="noreferrer">${escapeHTML(item.title)} ↗</a>` : escapeHTML(item.title)}</strong><p>${escapeHTML(item.authors)}</p><p>${escapeHTML(item.venue)} · ${escapeHTML(formatCommunityDate(item.date))} · ${escapeHTML(item.type)}</p></li>`).join("")}</ul></article>
+    <article class="foundation-card reveal"><span>Recognition</span><h3>Awards and reviewing</h3><ul class="foundation-records foundation-records--columns">${awards.map(record).join("")}</ul></article>
+    <article class="foundation-card reveal"><span>Delivery leadership</span><h3>Technologies used by teams I managed at Intellection</h3><p>In addition to the personal skills listed above, the Intellection delivery portfolio included these team technologies.</p><div class="tag-list">${teamTechnologies.map(makeTag).join("")}</div></article>
+    <article class="foundation-card reveal"><span>Continuing development</span><h3>Courses and certifications</h3><ul class="foundation-records foundation-records--columns">${certifications.map(record).join("")}</ul><a class="text-link" href="https://www.linkedin.com/in/shrikantshet/details/certifications/" target="_blank" rel="noreferrer">View credentials on LinkedIn ↗</a></article>`;
 }
 
 function renderContactDock() {
@@ -407,7 +434,6 @@ function openProjectDialog(projectId, trigger) {
   if (!project) return;
 
   projectDialogTrigger = trigger;
-  const projectNumber = String(projects.indexOf(project) + 1).padStart(2, "0");
   const relatedEngagements = project.engagementIds.map((id) => engagementById.get(id)).filter(Boolean);
   const projectAction = project.url
     ? `
@@ -419,11 +445,12 @@ function openProjectDialog(projectId, trigger) {
   projectDialogContent.innerHTML = `
     <button class="project-modal__close" type="button" aria-label="Close work file" data-project-modal-close>×</button>
     <div class="project-modal__meta">
-      <span>Work file ${projectNumber}</span>
+      <span>${escapeHTML(project.period)}</span>
       <span>${escapeHTML(project.role || "Engagement")}</span>
     </div>
     <p class="project-modal__client">${escapeHTML(project.client)}</p>
     <h2 id="project-dialog-title">${escapeHTML(project.title)}</h2>
+    ${project.intermediary ? `<p class="project-intermediary">Via ${escapeHTML(project.intermediary)}</p>` : ""}
     <p class="project-modal__description">${escapeHTML(project.description)}</p>
     ${
       relatedEngagements.length
@@ -545,4 +572,6 @@ renderCommunityEngagements();
 renderPracticeAreas();
 renderTestimonials();
 renderContactDock();
+renderProfile();
+renderFoundations();
 observeReveals();

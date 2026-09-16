@@ -17,7 +17,6 @@ const requiredFiles = [
   "images/whatsapp.svg",
   "robots.txt",
   "sitemap.xml",
-  "Shrikant Shet_FullStack_Resume.pdf",
 ];
 
 const assert = (condition, message) => {
@@ -92,8 +91,13 @@ const communityEngagementIds = new Set(data.communityEngagements.map((engagement
 const engagementIds = new Set([...experienceIds, ...communityEngagementIds]);
 const projectIds = new Set(data.projects.map((project) => project.id));
 const isCommunityDate = (value) => value === null || /^\d{4}-\d{2}$/.test(value);
-assert(data.projects.length === 28, `Expected 28 project records, found ${data.projects.length}`);
-assert(data.experiences.length === 16, `Expected 16 experience records, found ${data.experiences.length}`);
+assert(data.projects.length === 17, `Expected 17 project records, found ${data.projects.length}`);
+assert(data.experiences.length === 18, `Expected 18 experience records, found ${data.experiences.length}`);
+assert(data.projects.every((project) => project.period), "Every project needs its recorded period or an explicit unknown-date label");
+assert(data.experiences.every((experience) => /^\d{4}-\d{2}(?:-\d{2})?$/.test(experience.startDate) && (!experience.endDate || experience.endDate >= experience.startDate)), "Experience dates must be chronological");
+assert(data.profile.name === "Shrikant Avinash Shet", "Profile name must be consistent");
+assert(data.publications.length === 3 && data.certifications.length === 31, "Foundations must retain the complete publication and credential inventory");
+assert(!data.projects.some((project) => project.client.includes("Rance") && /\bERP\b/i.test(JSON.stringify(project))), "RanceLab public project content must omit ERP");
 assert(data.aiPractice?.title && data.aiPractice?.description, "AI practice needs a title and description");
 assert(data.aiPractice?.journey?.length === 5, "AI practice needs five journey stages");
 assert(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.contact?.email), "Contact email must be valid");
