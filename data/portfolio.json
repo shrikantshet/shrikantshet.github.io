@@ -346,7 +346,7 @@
   "experiences": [
     {
       "id": "rance-consultant",
-      "period": "24 Nov 2025 — Present",
+      "period": "24 Nov 2025 — 30 Sep 2026",
       "organization": "Rance Computer Pvt. Ltd.",
       "detail": "RanceLab · FusionRetail · FusionResto",
       "role": "Consultant",
@@ -360,7 +360,7 @@
         "technology"
       ],
       "startDate": "2025-11-24",
-      "endDate": null
+      "endDate": "2026-09-30"
     },
     {
       "id": "joule-fractional-cto",
@@ -660,7 +660,7 @@
       "title": "RanceLab product suite",
       "description": "Rance Computer brands include RanceLab, FusionRetail, and FusionResto. Built and maintained the Config portal for client configurations, Mobi for business analytics and AI insights, web ordering portals, self-service kiosks, and point-of-sale workflows for hospitality and retail businesses.",
       "role": "Consultant / Developer",
-      "period": "24 Nov 2025 — Present",
+      "period": "24 Nov 2025 — 30 Sep 2026",
       "stack": [
         "Next.js",
         "React Native",
@@ -1465,13 +1465,13 @@
     }
   ],
   "experienceTotals": {
-    "asOf": "2026-09-14",
+    "asOf": "2026-10-02",
     "method": "Distinct calendar days across all roles, including start and end dates; overlapping days count once. Approximate years and months use 365.2425 days per year. Mechanical industry includes JSW Steel, Sudarshan Chemical Industries, and Hirlekar Precision. Categories may overlap and must not be summed to calculate overall experience.",
-    "totalDays": 4605,
+    "totalDays": 4623,
     "categories": [
       {
         "label": "IT and management",
-        "days": 2812
+        "days": 2830
       },
       {
         "label": "Research and teaching",
